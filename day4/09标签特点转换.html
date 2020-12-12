@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+        块级标签： div p h1~h6(居中margin：0 auto；)
+            1.默认独占一行
+            2.能设置宽高，四个方向的内外边距都生效
+            3.默认宽度100%
+            4.内部可以嵌套其他块级或行内（p和h1~h6不能嵌套其他块级）
+        行内标签：span（居中text-align：center; line-height:高度）
+            1.默认在一行排列
+            2.宽高无效， 水平方向边距可以生效，垂直方向边距不生效，内边距只有颜色但是不占用位置
+            3.宽度由内容撑开
+            4.内部只能嵌套其他行内，不能嵌套块级
+        行内块标签： img(居中text-align：center;或转换块级margin：0 auto；)
+            1.默认在一行排列
+            2.宽高有效，可以设置四个方向边距
+            3.自带白色间隙 
+        */
+
+        /* 
+        转换为块级    display: block;
+        转换为行内    display:inline;
+        转换为行内块  display: inline-block;
+        */
+        span{
+            border: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+    <span>
+111111
+    </span>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 浮动
+            概念：设置浮动属性的标签会脱离标准流,移动到其父标签的指定位置
+            同级标签要么浮动，要么都不浮动
+            float
+                none 默认， 不浮动
+                left 左浮动
+                right 右浮动
+        浮动脱离标准流，但不脱离文字流
+        */
+        .box{
+            width: 400px;
+            height: 400px;
+            background-color: #448899;
+            float: left;
+        }
+        .box1{
+            width: 100px;
+            height: 100px;
+            background-color: #998844;
+            float: left;
+        }
+        
+        .box2{
+            width: 100px;
+            height: 100px;
+            background-color: #994488;
+            float: right;
+        }
+        .box3{
+            width: 100px;
+            height: 100px;
+            background-color: #494949;
+            float: right;
+        }
+        .wrap{
+            width: 400px;
+            height: 400px;
+            background-color: #999;
+            text-align: justify;
+            float: left;
+        }
+        img{
+            width: 200px;
+            height: 200px;
+            float:right;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+    </div>
+    <div class="wrap">
+        <img src="../day4/下载.jpg" alt="">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit voluptates, iusto saepe laboriosam perferendis aliquid vero reiciendis eveniet amet quaerat distinctio voluptatem. Consequatur, sequi. Recusandae qui quis hic reprehenderit, voluptatem cupiditate nihil eveniet aspernatur natus accusamus saepe consequuntur. Saepe provident iste deleniti dolor distinctio corrupti perspiciatis. Quod cumque deserunt natus voluptates quisquam culpa necessitatibus incidunt repellendus nostrum autem esse debitis sed, est perferendis soluta non iusto ad, voluptas perspiciatis dignissimos neque obcaecati 
+    </div>
+</body>
+</html>

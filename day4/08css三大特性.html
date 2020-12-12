@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+        层叠性：
+            样式冲突就近原则，也就是后引入的生效，不冲突的不受影响
+        继承性：
+            样式的优先级永远是最低的，
+            可以继承的样式
+                    color
+                    font-  开头
+                    text-  开头
+                    line-  开头
+                    list-  开头
+        权值
+            id 100
+            类 10
+            标签 1
+            通配符 0
+            行内样式 1000
+            复合选择器权值等于其单一选择器权值之和
+            id 类 标签 不是一个等级， 无法比较
+            无数个类比不上一个id
+
+            无限权重！important， 打破常规优先级，都加无限权重按原来的优先级
+
+            继承样式权值永远最低，比通配符还要低，跟父标签权值无关
+         */
+        .box{
+            width: 200px;
+            height: 200px;
+            border: 1px solid #999;
+            color: blue;
+            font-size: 30px;
+            text-align: center;
+        }
+        .box1{
+            width: 100px;
+            border: 1px solid #999;
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">11
+        <div class="box1">22</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1 {
+            width: 300px;
+            height: 300px;
+            background-color: red;
+            /* 
+                圆角属性
+             */
+            /* border-radius: 30px; */
+            /* border-radius: 10px 20px 30px 40px; */
+            /* 
+                如果设置为50%，会变成一个圆形，椭圆还是正圆根据宽高来控制
+             */
+            border-radius: 50%;
+        }
+        /* 半圆 */
+        .box2 {
+            width: 400px;
+            height: 200px;
+            background-color: blue;
+            border-radius: 200px 200px 0 0;
+        }
+        /* 四分之一圆 */
+        .box3 {
+            width: 300px;
+            height: 300px;
+            background-color: deeppink;
+            border-radius: 300px 0 0 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+</body>
+</html>

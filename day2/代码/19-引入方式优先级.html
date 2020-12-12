@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/引入方式优先级.css">
+    <style>
+        div {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <!-- 行内式最优先，内嵌式和外链式后引入生效 -->
+    <div style="background-color: green;">hello world</div>
+</body>
+</html>

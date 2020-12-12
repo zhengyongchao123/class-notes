@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .wrap1 {
+            width: 300px;
+            height: 300px;
+            background-color: red;
+        }
+
+        .box1 {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            margin: 0 auto;
+        }
+        .wrap2 {
+            width: 300px;
+            height: 300px;
+            background-color: gold;
+            /* 水平居中 */
+            text-align: center;
+            /* 垂直居中 */
+            line-height: 300px;
+        }
+        .box2 {
+            background-color: green;
+        }
+        .wrap3 {
+            width: 300px;
+            height: 300px;
+            background-color: purple;
+            /* text-align: center;
+            line-height: 300px; */
+        }
+        img {
+            width: 100px;
+            height: 100px;
+            /* vertical-align: middle; */
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 块级居中 margin: 0 auto; -->
+    <div class="wrap1">
+        <div class="box1"></div>
+    </div>
+    <!-- 行内居中: 行内标签具有文字的对齐属性 -->
+    <div class="wrap2">
+        <span class="box2">hello world</span>
+    </div>
+    <!-- 
+        行内块居中：
+            1.父标签加text-align:center;
+            2.先display:block转换为块级，在加margin:0 auto;
+    -->
+    <div class="wrap3">
+        <img src="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=3041701001,1968583786&fm=11&gp=0.jpg" alt="">
+    </div>
+</body>
+
+</html>

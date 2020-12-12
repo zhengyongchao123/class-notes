@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    /* 通配符选择器 */
+    /*    * 代表所有标签 */
+    *{
+        background-color: #666;
+        color: #999;
+    }
+    /* 标签选择器 */
+    div{
+        color: red;
+    }
+    /* 类选择器 */
+    .box1{
+        color: gold;
+    }
+    /* id选择器 */
+    /* 同样的id在一个文档中只能有一个，具有唯一性 */
+    #box2{
+        color: blue;
+    }
+    </style>
+</head>
+<body>
+    <div>1</div>
+    <div id="box1" class="box1" >1</div>
+    <div id="box2">1</div>
+</body>
+</html>

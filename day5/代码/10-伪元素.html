@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrap {
+            width: 500px;
+            height: 500px;
+            background-color: red;
+        }
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+        }
+        /* 
+            伪元素(要求写单冒号，单冒号兼容性比双冒号更加好)
+            伪元素默认是行内标签
+            :before 在第一个子元素的前面加一个元素
+            :after 在最后一个子元素的后面加一个元素
+         */
+        .wrap:before {
+            content: 'hello world';
+            background-color: deeppink;
+            width: 100px;
+            height: 100px;
+            display: block;
+        }
+        .wrap:after {
+            content: '你好';
+            background-color: gold;
+            width: 200px;
+            height: 100px;
+            display: block;
+            color: #fff;
+            font-size: 50px;
+            text-align: center;
+            line-height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="box"></div>
+    </div>
+</body>
+</html>

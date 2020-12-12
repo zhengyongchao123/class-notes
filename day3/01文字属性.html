@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrap{
+            width: 200px;
+            height: 200px;
+            background-color: gold;
+        }
+        .box1 {
+            font-family: fantasy;
+            font-weight: bold;
+            font-style: italic;text-align: center;
+            line-height: 200px;
+        }
+
+        /* .box2 {
+            font-family: fantasy;
+            font-weight: normal;
+            font-style: oblique;
+        }  */
+    </style>
+</head>
+
+<body>
+    <!-- 
+        块级标签可以设置宽高，
+        行内标签宽高无效
+    -->
+
+    <!-- 
+    文字属性：
+        font-size 字体大小  默认16px，最小12px（1-11px  就是12px的效果）
+        font-family 字体系列   可以写多个，增加容错率，第一个不生效时会解析第二个
+        font-style 字体样式 
+            italic   斜体
+            normal    默认，显示正常
+        font-weight 字体粗细
+            bold     加粗（400）
+            normal   正常 （700）  可以取消h标签加粗效果
+            100 - 900（不同的字体，加粗效果不一样）
+        line-height 行高   单行文本竖直居中
+            normal   默认，合理的行高
+            [length] 设置固定的像素值
+            [number] 数值， n代表n个字大小
+        简写  font：style weight size/height family
+            font: italic bold 20px/3 '楷体'
+            容错率较低， 必须同时拥有size 和 family
+    -->
+
+    <div class="wrap">
+        <div class="box1"> hello 你好 this is dog ...wang ~  wang ~</div>
+        <!-- <div class="box2">hello 你好</div> -->
+    </div>
+</body>
+
+</html>

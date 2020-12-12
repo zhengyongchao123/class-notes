@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+            继承性：样式的优先级永远是最低的
+            可以继承的样式
+                color
+                font- 开头
+                text- 开头
+                line- 开头
+                list- 开头
+         */
+        .wrap {
+            color: red;
+            font-size: 30px;
+            text-decoration: underline;
+        }
+        .box {
+            color: blue;
+            text-decoration: overline;
+        }
+        .list {
+            list-style-type: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        父亲
+        <div class="box">
+            儿子
+        </div>
+    </div>
+    <ul>
+        <li class="list">1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+    </ul>
+</body>
+</html>

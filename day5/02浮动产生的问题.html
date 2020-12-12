@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            /* height: 200px; */
+            border: 1px solid red;
+            /* overflow: hidden; */
+        }
+        .box1{
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            float: left;
+        }
+        .clearfix:after{
+            content: '';
+            clear: both;
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- 
+    在正常的标准流，父标签不设置高度时，内容区域会默认被字标签撑开
+
+    问题:字标签设置浮动，会脱离标准流，导致父标签无法被撑开，并且会影响后续布局 
+
+    解决：
+        1.父标签设置固定高度。  缺点：不够灵活
+        2.给父标签设置overflow：hidden;(溢出隐藏)
+        3.在最后一个浮动子标签后边，设置css属性clear：both;
+            缺点：增加了多余的结构代码
+        4.利用伪元素
+            .clearfix:after{
+                content: '';
+                clear: both;
+                display: block;
+            }
+    -->
+    <div class="box clearfix">
+        <div class="box1"></div>
+        <div class="box1"></div>
+        <!-- <div style="clear:both;"></div> -->
+    </div>
+</body>
+</html>

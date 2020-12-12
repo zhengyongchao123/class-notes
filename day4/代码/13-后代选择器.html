@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* .wrap>.box {
+            color: red;
+        } */
+        /* 后代选择器 */
+        .wrap .box {
+            color: gold;
+        }
+        /* .wrap .box1 .box {
+
+        } */
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="box">1</div>
+        <div class="box1">
+            3
+            <div class="box">4</div>
+        </div>
+    </div>
+    <div class="box">2</div>
+</body>
+</html>

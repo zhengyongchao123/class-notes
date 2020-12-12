@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        表格
+            表格结构标签
+                table 表格大标题
+                tr 表格每一行
+                td 表格单元格
+                th 表头单元格，自带居中加粗效果
+                thead 头部: 表格的列标题
+                tbody 主体：表格的数据
+                tfoot 底部：表格的脚注之类的东西
+                caption 表格标题
+            表格自带属性
+                border 表格边框
+                cellpadding 设置表格内容到边框的距离
+                cellspacing 设置表格边框之间的距离
+                align 水平对齐方式 left/right/center
+                valign 垂直对齐方式 top/bottom/middle
+            css属性
+                border-collapse: collapse; 设置表格为单一边框（cellspacing会失效）
+     -->
+    <table border="1" cellpadding="10" cellspacing="0" style="border-collapse: collapse;">
+        <tr>
+            <td>姓名</td>
+            <td>性别</td>
+            <td>年龄</td>
+        </tr>
+        <tr>
+            <td>张三</td>
+            <td>男</td>
+            <td>23</td>
+        </tr>
+        <tr>
+            <td>李思</td>
+            <td>女</td>
+            <td>22</td>
+        </tr>
+    </table>
+</body>
+</html>

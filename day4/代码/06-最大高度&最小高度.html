@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrap {
+            width: 300px;
+            /* 
+                max-height 最大高度（0-300px）, 高度随着内容（文字或者子标签）变化而变换，最小0，最大300px
+                min-height 最小高度（300px-无限大），高度随着内容（文字或者子标签）变化而变换，最小300px，最大无限大
+             */
+            min-height: 300px;
+            background-color: red;
+        }
+        .box {
+            width: 100px;
+            height: 500px;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="box"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+            通配符选择器
+         */
+        /* * {
+            color: red;
+        } */
+        /* 
+            标签选择器
+         */
+        /* div {
+            color: blue;
+        } */
+        /* 
+            类选择器
+         */
+        .box {
+            color: gold;
+            width: 200px;
+            height: 200px;
+        }
+        .box1 {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        块级标签可以设置宽高
+        行内标签宽高无效
+     -->
+    <div class="box box1" id="div1">
+        hello world
+    </div>  
+    <span class="box box1">
+        你好你好
+    </span>
+</body>
+</html>

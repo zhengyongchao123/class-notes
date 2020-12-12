@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+            长度单位：
+                px 固定的像素值, 固定的长度单位
+                em 相对长度单位
+                    1.相对于当前元素的font-size, font-size:20px, 1em = 20px.
+                    2.如果当前元素的font-size设置是em单位，相对于父标签font-size
+                % 相对长度
+                    相对于父标签的宽度或者高度
+                rem 相对长度单位(主要应用在移动端)
+                    相对于根元素(html)的font-size
+         */
+        html {
+            font-size: 20px;
+        }
+        .box1 {
+            width: 200px;
+            height: 100px;
+            background-color: red;
+        }
+        .box2 {
+            font-size: 20px;
+            width: 20em;
+            height: 100px;
+            background-color: blue;
+        }
+        .box3 {
+            font-size: 2em;
+        }
+        .box4 {
+            font-size: 40px;
+        }
+        .wrap {
+            font-size: 20px;
+        }
+        .box5 {
+            width: 50%;
+            height: 100px;
+            background-color: gold;
+        }
+        .wrap1 {
+            width: 500px;
+            height: 600px;
+        }
+        .box6 {
+            width: 50%;
+            height: 50%;
+            background-color: red;
+        }
+        .box7 {
+            width: 20rem;
+            height: 100px;
+            background-color: deeppink;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="wrap">
+        <div class="box3">
+            hello world
+        </div>
+        <div class="box4">
+            hello world
+        </div>
+    </div>
+    <div class="box5"></div>
+    <div class="wrap1">
+        <div class="box6"></div>
+    </div>
+    <div class="box7"></div>
+</body>
+</html>

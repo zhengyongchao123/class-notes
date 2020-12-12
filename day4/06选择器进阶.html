@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            color: #000;
+        }
+        /* 
+        群组选择器
+            多个选择器组合到一起，用逗号分隔   例如：div,p,span{}
+        交集选择器
+            用两个或两个以上条件寻找   例如：p.box{} 既是p标签又是类名为box，没有空格
+        子代选择器
+            直系一代发生改变    例如： .wrap>.box{}
+        后代选择器
+            所有后代发生改变    例如： .wrap .box{}
+
+        继承样式优先级最低，可以用通配符选择器改变
+        */
+        .box1>.box3{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">11
+        <div class="box3">22
+            <div class="box3">22</div>
+        </div>
+    </div>
+    <p class="box2">11</p>
+    <span class="box2">11</span>
+</body>
+</html>

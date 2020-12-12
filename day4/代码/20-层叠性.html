@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+        }
+        .box {
+            background-color: blue;
+        }
+        /* 
+            层叠性：样式冲突就近原则，也就是后引入生效
+            不冲突的样式不受影响
+         */
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

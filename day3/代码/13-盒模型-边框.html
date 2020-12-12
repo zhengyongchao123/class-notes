@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            padding: 20px;
+            /* 
+                边框由三部分组成
+                    边框宽度 border-width
+                    边框样式 border-style
+                        solid 实线
+                        dashed 虚线
+                        double 双线
+                        dotted 点状线
+                    边框颜色 border-color
+             */
+            border-width: 10px 20px 30px 40px;
+            border-style: solid dashed double dotted;
+            border-color: blue gold blue purple;
+            /* 简写方式 */
+            /* border: 10px solid #000;
+            border-left: 10px dashed gold; */
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

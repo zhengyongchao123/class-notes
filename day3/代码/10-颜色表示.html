@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+            颜色表示：
+                1.英文单词 red blue yellow pink
+                2.#加六位16进制
+                    #000000 = black
+                    #ffffff = white
+                    三原色（红、绿、蓝）
+                    六位数，前两位代表红色，中间两位代表绿色，最后两位代表蓝色
+                    #ff0000 = red
+                    #00ff00 = lime(酸橙色)
+                    六位相同可以简写成三位
+                    #ffffff = #fff
+                    #cccccc = #ccc
+                3.rgb
+                    rgb(r,g,b)
+                        r g b 范围是 0-255
+                    rgb(255,0,0) = #ff0000
+                  rgba
+                    rgb(r,g,b,a)
+                        a 代表 0-1的透明度
+         */
+         body {
+             /* 背景图片 */
+             background-image: url(https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3065179808,949830502&fm=11&gp=0.jpg);
+         }
+        .box1 {
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+        }
+        .box2 {
+            width: 200px;
+            height: 200px;
+            background-color: #0000ff;
+        }
+        .box3 {
+            width: 200px;
+            height: 200px;
+            background-color: rgb(255, 100, 0);
+        }
+        .box4 {
+            width: 200px;
+            height: 200px;
+            background-color: rgba(255, 0, 0, .5);
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <div class="box4"></div>
+</body>
+</html>
