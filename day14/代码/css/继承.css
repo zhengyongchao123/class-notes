@@ -1,0 +1,14 @@
+.public,
+.box1,
+.box2 {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+}
+.box1 {
+  font-size: 50px;
+  color: blue;
+}
+.box2 {
+  border-radius: 50%;
+}

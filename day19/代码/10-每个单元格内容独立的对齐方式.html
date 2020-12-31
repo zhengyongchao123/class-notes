@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrap {
+            width: 300px;
+            height: 300px;
+            border: 1px solid #000;
+            display: grid;
+            grid-template-columns: repeat(3,100px);
+            grid-template-rows: repeat(3,100px);
+            /* justify-items: center; */
+        }
+        .wrap div {
+            width: 80px;
+            height: 80px;
+            background-color: red;
+            
+        }
+        .wrap div:nth-child(1) {
+            /* 单元格独立的对齐方式 */
+            justify-self: center;
+        }
+        .wrap div:nth-child(2) {
+            align-self: end;
+        }
+        .wrap div:nth-child(3) {
+            place-self: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</body>
+</html>

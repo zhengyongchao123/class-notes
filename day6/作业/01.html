@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            background-color: #f1f1f1;
+        }
+
+        .wrap {
+            width: 810px;
+            margin: 0 auto;
+            margin-top: 50px;
+            /* border: 1px solid red; */
+            /* position: relative; */
+        }
+
+        .box {
+            width: 200px;
+            height: 100px;
+            background-color: #fff;
+            float: left;
+            margin: 1px;
+            position:relative;
+        }
+
+        img {
+            width: 26px;
+            height: 26px;
+            margin-top: -13px;
+            position: absolute;
+            top: 50%;
+            left: 40px;
+            background-color: #fff;
+        }
+
+        span {
+            line-height: 100px;
+            margin-left: 100px;
+            background-color: #fff;
+        }
+        .box2{
+            width: 200px;
+            height: 100px;
+            color: #fff;
+            background-color: tomato;
+            opacity: 0.8;
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: none;
+        }
+        .box2 p{
+            background-color: tomato;
+            text-align: center;
+            line-height: 50px;
+            font-size: 14px;
+        }
+        .box3{
+            height: 20px;
+            width: 100px;
+            margin-left: 50px;
+            line-height: 20px;
+            text-align: center;
+            background-color: tomato;
+            border-radius: 10px;
+            border: 1px solid #fff;
+            font-size: 14px;
+        }
+        .clearfix:after{
+            content: '';
+            display:block;
+            clear: both;
+        }
+        .box:hover .box2{
+            display: block;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="wrap clearfix">
+        <div class="box">
+            <img src="./images/点赞后.png" alt="">
+            <span>推荐就业</span>
+            <div class="box2">
+                <p>一地学习全国就业</p>
+                <div class="box3">查看详情</div>
+            </div>
+        </div>
+        <div class="box">
+            <img src="./images/伞.png" alt="">
+            <span>全程面授</span>
+            <div class="box2">
+                <p>一地学习全国就业</p>
+                <div class="box3">查看详情</div>
+            </div>
+        </div>
+        <div class="box">
+            <img src="./images/楼.png" alt="">
+            <span>免费食宿</span>
+            <div class="box2">
+                <p>一地学习全国就业</p>
+                <div class="box3">查看详情</div>
+            </div>
+        </div>
+        <div class="box">
+            <img src="./images/债券借贷.png" alt="">
+            <span>免息贷款</span>
+            <div class="box2">
+                <p>一地学习全国就业</p>
+                <div class="box3">查看详情</div>
+            </div>
+        </div>
+        <div class="box">
+            <img src="./images/本子.png" alt="">
+            <span>免费试学</span>
+            <div class="box2">
+                <p>一地学习全国就业</p>
+                <div class="box3">查看详情</div>
+            </div>
+        </div>
+        <div class="box">
+            <img src="./images/交通.png" alt="">
+            <span>交通补贴</span>
+            <div class="box2">
+                <p>一地学习全国就业</p>
+                <div class="box3">查看详情</div>
+            </div>
+        </div>
+        <div class="box">
+            <img src="./images/赠送.png" alt="">
+            <span>网课赠送</span>
+            <div class="box2">
+                <p>一地学习全国就业</p>
+                <div class="box3">查看详情</div>
+            </div>
+        </div>
+        <div class="box">
+            <img src="./images/free.png" alt="">
+            <span>免费重修</span>
+            <div class="box2">
+                <p>一地学习全国就业</p>
+                <div class="box3">查看详情</div>
+            </div>
+        </div>
+        
+    </div>
+    
+    
+</body>
+
+</html>

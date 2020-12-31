@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 300px;
+            height: 300px;
+            background-color: red;
+            /* 设置添加过渡的css样式, 可以单独设置某一个css属性，也可以设置all,
+            代表所有属性都有过渡效果 */
+            /* transition-property: background-color,width,height; */
+            transition-property: all;
+            /* 规定过渡效果的时长 s秒 ms毫秒 1s = 1000ms */
+            transition-duration: 2s;
+            /* 
+                规定速度效果的速度曲线
+                    linear 匀速
+                    ease 慢速开始，中间变快，慢速结束(默认属性)
+                    ease-in 慢速开始
+                    ease-out 慢速结束
+                    ease-in-out 慢速开始和结束
+             */
+            transition-timing-function: linear;
+            /* 
+                规定延迟时间
+            */
+            transition-delay: 1s;
+        }
+        .box:hover {
+            width: 500px;
+            height: 400px;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

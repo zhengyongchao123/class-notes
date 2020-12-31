@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrap {
+            border: 2px solid #000;
+            width: 400px;
+            height: 300px;
+            /* 网格布局的划分和本身的宽高无关，和有没有子标签也无关 */
+            display: grid;
+            /* grid-template-columns: 33.3%  33.3%  33.3%; */
+            /* grid-template-columns: repeat(3,33.3%); */
+            /* grid-template-columns: repeat(3,100px 50px); */
+
+            /* auto-fill 关键字，默认填充 */
+            /* grid-template-columns: repeat(auto-fill,50px); */
+            /* fr 比例关系单位 */
+            grid-template-columns: 1fr 1fr 2fr;
+            grid-template-rows: 100px 100px 100px;
+        }
+        .box {
+            width: 50px;
+            height: 50px;
+            background-color: red;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>

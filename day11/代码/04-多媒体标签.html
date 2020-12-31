@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 40px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        音频标签：audio
+        src 引入的文件路径
+        controls 调用浏览器的自带插件
+        loop 设置为循环播放
+        muted 默认静音
+        autoplay 谷歌高版本不支持自动播放，火狐静音可以自动播放，低版本webkit可以支持，比如国内浏览器
+     -->
+    <audio class="box" src="./media/happy birthday.mp3" controls="controls" loop autoplay></audio>
+    <!-- 
+        视频标签：video
+        src 引入的文件路径
+        controls 调用浏览器的自带插件
+        loop 循环播放
+        muted 默认静音
+        width 宽度
+        height 高度
+        autoplay 自动播放，谷歌静音可以自动播放
+        poster 设置未播放时展示的画面
+     -->
+    <video src="./media/Butter-Fly.mp4" controls="controls" loop width="300" muted poster="https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=75363498,4294561975&fm=26&gp=0.jpg"></video>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1 {
+            width: 300px;
+            height: 300px;
+            background-image: radial-gradient(red 50%,gold 70%);
+        }
+        .box2 {
+            width: 300px;
+            height: 300px;
+            /* 
+                可以设置发散点
+             */
+            background-image: radial-gradient(at left top,red ,gold,blue);
+        }
+        .box3 {
+            width: 300px;
+            height: 300px;
+            background-image: radial-gradient(at 100px 100px,red,gold,blue);
+        }
+        .box4 {
+            width: 300px;
+            height: 200px;
+            /* 
+                ellipse 椭圆形，默认值
+                circle 圆形
+                closest-side 最近的边
+                closest-corner 最近的角
+                farthest-side 最远的边
+                farthest-corner 最远的角
+             */
+            background-image: radial-gradient(ellipse at center,red ,gold,blue);
+        }
+        .box5 {
+            width: 300px;
+            height: 300px;
+            background-image: radial-gradient(closest-side at 100px 100px,red ,gold,blue);
+        }
+        .box6 {
+            width: 300px;
+            height: 300px;
+            background-image: radial-gradient(closest-corner at 100px 100px,red ,gold,blue);
+        }
+        .box7 {
+            width: 300px;
+            height: 300px;
+            background-image: radial-gradient(farthest-side at 100px 100px,red ,gold,blue);
+        }
+        .box8 {
+            width: 300px;
+            height: 300px;
+            background-image: radial-gradient(farthest-corner at 100px 100px,red ,gold,blue);
+        }
+        /* 重复径向渐变 */
+        .box9 {
+            width: 300px;
+            height: 300px;
+            background-image: repeating-radial-gradient(red,gold 10%,red 20%);
+            background-size: 30px 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <div class="box4"></div>
+    <div class="box5"></div>
+    <div class="box6"></div>
+    <div class="box7"></div>
+    <div class="box8"></div>
+    <div class="box9"></div>
+</body>
+</html>

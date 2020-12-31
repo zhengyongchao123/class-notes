@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .wrap {
+            width: 1349px;
+            display: flex;
+            background-color: #f5f5f5;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        nav {
+            width: 1226px;
+            height: 58px;
+            color: #333;
+            line-height: 58px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        nav span {
+            font-size: 20px;
+            display: block;
+        }
+        nav .spann{
+    
+            font-size: 20px;
+            display: flex;
+            align-items: center;
+        }
+        nav .spann .span1{
+            display: block;
+            width: 36px;
+            height: 24px;
+            border: 1px solid #666;
+            border-right: 0;
+            text-align: center;
+            line-height: 24px;
+        }
+        nav .spann .span2{
+            display: block;
+            width: 36px;
+            height: 24px;
+            border: 1px solid #666;
+            text-align: center;
+            line-height: 24px;
+        }
+
+        main {
+            width: 1226px;
+            /* background-color: cadetblue; */
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .box1 {
+            width: 234px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 39px 0;
+            background-color: #f1eded;
+            border-top: 1px solid #e53935;
+        }
+
+        .con1 {
+            width: 234px;
+            height: 46px;
+            padding: 15px 0 0;
+            font-size: 21px;
+            color: #ef3a3b;
+            text-align: center;
+            line-height: 46px;
+        }
+
+        .con2 {
+            width: 34px;
+            height: 53px;
+            padding: 25px 0;
+        }
+
+        .con2 img {
+            width: 34px;
+            height: 53px;
+        }
+
+        .con3 {
+            width: 234px;
+            height: 22px;
+            font-size: 15px;
+            color: #0000008a;
+            text-align: center;
+        }
+
+        .con4 {
+            width: 234px;
+            height: 46px;
+            display: flex;
+            justify-content: center;
+            margin-top: 28px;
+        }
+
+        .con4 .span1 {
+            background-color: #605751;
+            color: #fff;
+            display: block;
+            width: 46px;
+            height: 46px;
+        }
+
+        .con4 span {
+            color: #605751;
+            font-size: 24px;
+            display: block;
+            width: 15px;
+            height: 46px;
+            line-height: 46px;
+            text-align: center;
+        }
+
+        .box2 {
+            width: 234px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 39px 0;
+            background-color: #f1eded;
+            border-top: 1px solid #2196f3;
+        }
+
+        .con_1 {
+            width: 140px;
+            height: 140px;
+        }
+
+        .con_1 img {
+            width: 140px;
+            height: 140px;
+            margin-top: 20px;
+        }
+
+        .con_2 {
+            width: 234px;
+            height: 30px;
+            font-size: 14px;
+            color: #212121;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .con_3 {
+            width: 234px;
+            height: 20px;
+            font-size: 12px;
+            color: #b0b0b0;
+            text-align: center;
+        }
+
+        .con_4 {
+            width: 234px;
+            height: 20px;
+            color: #ff6709;
+            font-size: 14px;
+            text-align: center;
+            margin-top: 5px;
+        }
+
+        .con_4 span {
+            color: #b0b0b0;
+            font-size: 14px;
+            text-decoration: line-through;
+        }
+
+        .box2:nth-child(3) {
+            border-top: 1px solid #e53935;
+        }
+
+        .box2:nth-child(4) {
+            border-top: 1px solid #00c0a5;
+        }
+
+        .box2:nth-child(5) {
+            border-top: 1px solid #ffac13;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <nav>
+            <span>小米闪购</span>
+            <span class="spann">
+                <span class="span1">&lt;</span> 
+                <span class="span2"> &gt;</span> 
+            </span>
+        </nav>
+        <main>
+            <div class="box1">
+                <div class="con1">10:00 场</div>
+                <div class="con2">
+                    <img src="./素材/flash.png" alt="">
+                </div>
+                <div class="con3">
+                    距离结束还有
+                </div>
+                <div class="con4">
+                    <span class="span1">00</span>
+                    <span>:</span>
+                    <span class="span1">11</span>
+                    <span>:</span>
+                    <span class="span1">04</span>
+                </div>
+            </div>
+            <div class="box2">
+                <div class="con_1">
+                    <img src="./素材/pic1.jpg" alt="">
+                </div>
+                <div class="con_2">
+                    小米笔记本Air 15.0"2019款...
+                </div>
+                <div class="con_3">
+                    像杂志一样随身携带
+                </div>
+                <div class="con_4">
+                    3299元<span> 3599元</span>
+                </div>
+            </div>
+            <div class="box2">
+                <div class="con_1">
+                    <img src="./素材/pic2.jpg" alt="">
+                </div>
+                <div class="con_2">
+                    小米无线鼠标Lite黑色
+                </div>
+                <div class="con_3">
+                    简约设计，轻盈握感
+                </div>
+                <div class="con_4">
+                    29元<span> 39元</span>
+                </div>
+            </div>
+            <div class="box2">
+                <div class="con_1">
+                    <img src="./素材/pic3.jpg" alt="">
+                </div>
+                <div class="con_2">
+                    自清洁|米家互联网立式空调...
+                </div>
+                <div class="con_3">
+                    一级能效更省电，自清洁
+                </div>
+                <div class="con_4">
+                    3499元<span> 4299元</span>
+                </div>
+            </div>
+            <div class="box2">
+                <div class="con_1">
+                    <img src="./素材/pic4.jpg" alt="">
+                </div>
+                <div class="con_2">
+                    工程挖掘机 白色
+                </div>
+                <div class="con_3">
+                    全新炫酷外观，工程系列豪华升级
+                </div>
+                <div class="con_4">
+                    99元<span> 199元</span>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>

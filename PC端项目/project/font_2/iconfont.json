@@ -1,0 +1,79 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "1283186",
+      "name": "错误",
+      "font_class": "cuowu",
+      "unicode": "e501",
+      "unicode_decimal": 58625
+    },
+    {
+      "icon_id": "2442495",
+      "name": "右箭头",
+      "font_class": "iconfontjiantou-copy",
+      "unicode": "e502",
+      "unicode_decimal": 58626
+    },
+    {
+      "icon_id": "4057084",
+      "name": "购物",
+      "font_class": "gouwu",
+      "unicode": "e619",
+      "unicode_decimal": 58905
+    },
+    {
+      "icon_id": "5449077",
+      "name": "右箭头",
+      "font_class": "arrow-bottom",
+      "unicode": "e50a",
+      "unicode_decimal": 58634
+    },
+    {
+      "icon_id": "5846994",
+      "name": "右箭头",
+      "font_class": "right-arrow",
+      "unicode": "e503",
+      "unicode_decimal": 58627
+    },
+    {
+      "icon_id": "8457848",
+      "name": "右箭头",
+      "font_class": "right",
+      "unicode": "e50c",
+      "unicode_decimal": 58636
+    },
+    {
+      "icon_id": "8571677",
+      "name": "心",
+      "font_class": "tubiaozhizuomoban",
+      "unicode": "e634",
+      "unicode_decimal": 58932
+    },
+    {
+      "icon_id": "11988261",
+      "name": "心",
+      "font_class": "xin",
+      "unicode": "e602",
+      "unicode_decimal": 58882
+    },
+    {
+      "icon_id": "12905140",
+      "name": "右箭头",
+      "font_class": "iconfontjiantou",
+      "unicode": "e505",
+      "unicode_decimal": 58629
+    },
+    {
+      "icon_id": "17812449",
+      "name": "右箭头",
+      "font_class": "youjiantou",
+      "unicode": "e699",
+      "unicode_decimal": 59033
+    }
+  ]
+}

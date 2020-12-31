@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 获取html高度
+        function auto () {
+            //声明一个变量等于当前设备宽度
+            var dev = document.documentElement.clientWidth;
+            console.log(dev);
+            if (dev > 750) {
+                dev = 750;
+            }
+            //根据当前设备宽度计算出当前字体大小
+            var fs = dev / 750 * 100;
+            console.log(fs);
+            // 赋值给html的font-size
+            document.documentElement.style.fontSize = fs + "px";
+        }
+        auto();
+        window.onresize = function(){
+            auto();
+        }
+    </script>
+    <style>
+        .box {
+            width: 2rem;
+            height: 2rem;
+            background-color: cadetblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+</body>
+
+</html>

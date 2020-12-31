@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* cover  背景图片放大到能铺满整个盒子，但是有可能会导致图片显示不完整
+        contain  在保证图片显示完整的情况下，放大到最大 */
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: forestgreen;
+            background-image: url(./0.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .box2{
+            width: 200px;
+            height: 200px;
+            background-color: forestgreen;
+            background-image: url(./0.jpg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            margin-top: 20px;
+        }
+        .box3{
+            width: 400px;
+            height: 400px;
+            background-color: forestgreen;
+            background-image: url(./0.jpg),url(./2.jpg);
+            background-repeat: no-repeat;
+            background-size: 200px 200px,200px 350px;
+            background-position: 0 0 ,200px 0px;
+            margin-top: 20px;
+        }
+
+        /* background-clip:
+            border-box  默认
+            padding-box  
+            content-box; */
+        .box4{
+            width: 200px;
+            height: 200px;
+            background-color: forestgreen;
+            padding: 30px;
+            border: 30px dashed red;
+            background-clip:content-box;
+        }
+        /* background-origin:
+            border-box  
+            padding-box  默认
+            content-box; */
+        .box5{
+            width: 200px;
+            height: 200px;
+            background-image: url(./2.jpg);
+            background-repeat: no-repeat;
+            background-size: 260px 260px;
+            padding: 30px;
+            border: 30px dashed red;
+            background-origin:content-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <div class="box4"></div>
+    <div class="box5"></div>
+</body>
+</html>

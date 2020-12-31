@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: deeppink;
+            position: relative;
+            left: 0;
+            animation-name: run;
+            animation-duration: 3s;
+            animation-timing-function: linear;
+            animation-delay: 1s;
+            /* 
+                forwards 动画停留在结束的位置
+                backwards 动画在延迟时，停留在开始的位置
+                both: forwards 和 backwards 都生效
+            */
+            animation-fill-mode: both;
+        }
+
+        @keyframes run {
+            from {
+                left: 200px;
+            }
+            to {
+                left: 800px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

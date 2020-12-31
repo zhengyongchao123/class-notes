@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            width: 300px;
+            height: 300px;
+            /* 可以设置发散点 */
+            background-image: radial-gradient(at left top, red, blue, gold);
+        }
+        .box2{
+            width: 300px;
+            height: 300px;
+            background-image: radial-gradient(at 100px 100px, red, blue, gold);
+        }
+        /* 
+        宽高不一样
+            ellipse 椭圆形，默认值
+            circle 圆形
+        */
+        /* 
+        closest-side 最近的边 
+        closest-corner 最近的边
+
+          */
+        .box3{
+            width: 300px;
+            height: 400px;
+            background-image: radial-gradient(circle, red, blue, gold);
+        }
+        .box4{
+            width: 400px;
+            height: 400px;
+            background-image: radial-gradient(closest-side at 100px 100px, red, blue, gold);
+        }
+        .box5{
+            width: 400px;
+            height: 400px;
+            background-image: radial-gradient(closest-corner at 100px 100px, red, blue, gold);
+        }
+        .box6{
+            width: 400px;
+            height: 400px;
+            background-image: radial-gradient(farthest-side at 100px 100px, red, blue, gold);
+        }
+        .box7{
+            width: 400px;
+            height: 400px;
+            background-image: radial-gradient(farthest-corner at 100px 100px, red, blue, gold);
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <div class="box4"></div>
+    <div class="box5"></div>
+    <div class="box6"></div>
+    <div class="box7"></div>
+</body>
+</html>

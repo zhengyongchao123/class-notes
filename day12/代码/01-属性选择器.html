@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* div[class] {
+            color: red;
+        } */
+        /* div[class="box1"] {
+            color: deeppink;
+        } */
+        /* 以box开头的 */
+        /* div[class^="box"] {
+            color: blue;
+        } */
+        /* 以box结尾的 */
+        /* div[class$="box"] {
+            color: gold;
+        } */
+        /* 包含box */
+        div[class*="box"] {
+            color: green;
+        }
+        a[target] {
+            color: deeppink;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">box1</div>
+    <div class="box2">box2</div>
+    <div class="abox">abox</div>
+    <div class="box">box3</div>
+    <a href="" target="_blank">百度</a>
+    <a href="" target>京东</a>
+</body>
+</html>

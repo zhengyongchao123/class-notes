@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="">
+        <input type="text" name="username" value="123456">
+        <input type="button" value="按钮">
+        <hr>
+        <!-- 文件上传类型 -->
+        <input type="file" name="file">
+        <hr>
+        <!-- 图像形式的提交按钮 -->
+        <input type="image"
+            src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=1672824262,2727256094&fm=11&gp=0.jpg"
+            width="200">
+        <hr>
+        <!-- 隐藏域 可以提交，但是页面不显示 -->
+        <input type="hidden" value="你好" name="hidden">
+        <hr>
+        <!-- 下拉框 -->
+        所属省：
+        <select name="province">
+            <option value="BJ">北京</option>
+            <option value="TJ">天津</option>
+            <option value="SC">四川</option>
+            <option value="SD">山东</option>
+            <option value="HN">河南</option>
+        </select>
+        <hr>
+        <!-- 文本域 style="resize: none;" 可以防止放大缩小 -->
+        <textarea name="text" cols="30" rows="10" style="resize: none;"></textarea>
+        <hr>
+        <!-- label标签,for属性对应相应input框的id -->
+        <label for="a">中国居民身份证</label>
+        <input type="radio" name="zhengjian" value="a" id="a">
+        <label for="b">港澳台居民居住证</label>
+        <input type="radio" name="zhengjian" value="b" id="b">
+        <label for="c">外国人永久居留身份证</label>
+        <input type="radio" name="zhengjian" value="c" id="c">
+        <hr>
+        <input type="submit">
+        <input type="reset">
+    </form>
+</body>
+
+</html>

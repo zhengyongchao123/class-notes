@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    ul{
+        list-style-type: none;
+        width: 1250px;
+        height: 40px;
+        font-size: 18px;
+        padding-left: 0;
+        margin: 0 auto;
+        animation: run 1s linear infinite;
+        background-image: linear-gradient(to right, rgb(156, 194, 18),rgb(21, 192, 92),rgb(29, 166, 207),rgb(19, 93, 130));
+    }
+    @keyframes run{
+        0%{
+            background-image: linear-gradient(to right, rgb(156, 194, 18),rgb(21, 192, 92),rgb(29, 166, 207),rgb(19, 93, 130));
+        }
+        100%{
+            background-image: linear-gradient(to left, rgb(156, 194, 18),rgb(21, 192, 92),rgb(29, 166, 207),rgb(19, 93, 130));
+        }
+    }
+    ul li{
+        width: 250px;
+        height: 40px;
+        float: left;
+        text-align: center;
+        line-height: 40px;
+        color: cornsilk;
+    }
+    li:hover{
+        background-color: rgba(200, 200, 200, 0.5);
+    }
+</style>
+<body>
+    <ul>
+        <li>首页</li>
+        <li>关于我们</li>
+        <li>个人</li>
+        <li>反馈</li>
+        <li>设置</li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- script 内部写js脚本 -->
+    <script src="./js/html5shiv.js"></script>
+    <!-- <script>
+        // 创建标签(默认是行内标签)
+        document.createElement('header');
+        document.createElement('nav');
+        document.createElement('aside');
+        document.createElement('article');
+        document.createElement('main');
+        document.createElement('footer');
+        document.createElement('section');
+    </script> -->
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        /* 转换为块级标签 */
+        /* header,nav,aside,article,main,footer,section {
+            display: block;
+        } */
+        header {
+            width: 100%;
+            height: 50px;
+            background-color: red;
+        }
+        nav {
+            width: 100%;
+            height: 50px;
+            background-color: blue;
+        }
+        aside {
+            width: 30%;
+            height: 300px;
+            background-color: gold;
+            float: left;
+        }
+        article {
+            width: 70%;
+            height: 300px;
+            background-color: pink;
+            float: left;
+        }
+        .clearfix:after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+        footer {
+            width: 100%;
+            height: 50px;
+            background-color: purple;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        新增的结构标签是块级标签
+        优点：  
+            1.避免起名字困扰
+            2.更加语义化
+            3.不需要加class
+     -->
+    <header>
+        这里是头部
+    </header>
+    <nav>
+        <a href="">首页</a>
+        <a href="">详情</a>
+        <a href="">关于</a>
+    </nav>
+    <main class="clearfix">
+        <aside>
+            这里是侧边栏
+        </aside>
+        <article>
+            这里是完整的内容区域
+            <section>
+                小区域
+                <h3>标题</h3>
+                <p>段落</p>
+            </section>
+            <section>
+                小区域
+                <h3>标题</h3>
+                <p>段落</p>
+            </section>
+        </article>
+    </main>
+    <footer>
+        这里是页脚区域
+    </footer>
+</body>
+</html>

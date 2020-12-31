@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: chocolate;
+            margin: 0 auto;
+            margin-top: 100px;
+            transition: all 2s linear;
+            /* 
+            改变变换原点
+                1.英文方向
+                2.固定的像素值
+                3.百分比 */
+            transform-origin: 100% 100%;
+        }
+        .box:hover{
+            /* 1turn=360deg */
+            transform: rotate(1turn);
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

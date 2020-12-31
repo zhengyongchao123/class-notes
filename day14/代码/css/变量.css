@@ -1,0 +1,18 @@
+.box1 {
+  width: 100px;
+  height: 100px;
+  background-color: #0000ff;
+}
+.box2 {
+  width: 100px;
+  height: 100px;
+  color: #0000ff;
+}
+.box3 {
+  width: 100px;
+  height: 100px;
+  border-color: #0000ff;
+}
+.box4 {
+  padding-right: 10px;
+}

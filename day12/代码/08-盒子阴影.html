@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #f4f4f4;
+        }
+        .box {
+            width: 300px;
+            height: 300px;
+            background-color: deeppink;
+            border-radius: 20px;
+            /* 
+                box-shadow
+                    1.水平位置，必需
+                    2.垂直位置，必需
+                    3.模糊距离
+                    4.阴影的尺寸
+                    5.阴影的颜色，默认黑色
+                    6.阴影的内外部，默认外部，可以设置内部inset
+             */
+            box-shadow: 10px 10px 10px 10px gold inset;
+        }
+        .box1 {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            border-radius: 50%;
+            border: 5px solid #fff;
+            /* 可以设置多个阴影 */
+            box-shadow: 0 0 5px red,0 0 20px gold,0 0 35px red;
+            margin: 0 auto;
+        }
+        .box2 {
+            width: 234px;
+            height: 300px;
+            background-color: #fff;
+            float: left;
+            margin-left: 10px;
+        }
+        .box2:hover {
+            box-shadow:0 15px 30px rgba(0,0,0,.1);
+            position: relative;
+            top: -2px;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="box"></div>
+    <div class="box1"></div> -->
+    <div class="box2"></div>
+    <div class="box2"></div>
+    <div class="box2"></div>
+    <div class="box2"></div>
+    <div class="box2"></div>
+</body>
+</html>

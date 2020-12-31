@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            perspective: 2000px;
+        }
+        .wrap{
+            width: 300px;
+            height: 300px;
+            /* border: 1px solid red; */
+            transform-style: preserve-3d;
+            position: relative;
+            margin: 0 auto;
+            margin-top: 100px;
+            animation: run 4s linear infinite;
+        }
+        .box{
+            width: 300px;
+            height: 300px;
+            /* border: 1px solid black; */
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        .front{
+            transform: translatez(150px);
+            background-image: url(./images/pic1.JPG);
+            background-size: 300px 300px ;
+            opacity: 0.5;
+            transition: all 0.5s linear;
+        }
+        .back{
+            transform: rotateY(180deg) translateZ(150px);
+            background-image: url(./images/pic2.jpg);
+            background-size: 300px 300px ;
+            opacity: 0.5;
+            transition: all 0.5s linear;
+        }
+        .left{
+            transform: rotateY(-90deg) translateZ(150px);
+            background-image: url(./images/pic3.jpg);
+            background-size: 300px 300px ;
+            opacity: 0.5;
+            transition: all 0.5s linear;
+        }
+        .right{
+            transform: rotateY(90deg) translateZ(150px);
+            background-image: url(./images/pic4.jpg);
+            background-size: 300px 300px ;
+            opacity: 0.5;
+            transition: all 0.5s linear;
+        }
+        .top{
+            transform: rotateX(90deg) translateZ(150px);
+            background-image: url(./images/pic5.jpeg);
+            background-size: 300px 300px ;
+            opacity: 0.5;
+            transition: all 0.5s linear;
+        }
+        .bottom{
+            transform: rotateX(-90deg) translateZ(150px);
+            background-image: url(./images/pic6.jpg);
+            background-size: 300px 300px ;
+            opacity: 0.5;
+            transition: all 0.5s linear;
+        }
+        .box1{
+            width: 100px;
+            height: 100px;
+            /* border: 1px solid black; */
+            position: absolute;
+            left: 100px;
+            top: 100px;
+        }
+        .front1{
+            transform: translatez(50px);
+            background-image: url(./images/01.png);
+            background-size: 100px 100px ;
+        }
+        .back1{
+            transform: rotateY(180deg) translateZ(50px);
+            background-image: url(./images/05.png);
+            background-size: 100px 100px ;
+        }
+        .left1{
+            transform: rotateY(-90deg) translateZ(50px);
+            background-image: url(./images/03.png);
+            background-size: 100px 100px ;
+        }
+        .right1{
+            transform: rotateY(90deg) translateZ(50px);
+            background-image: url(./images/04.png);
+            background-size: 100px 100px ;
+        }
+        .top1{
+            transform: rotateX(90deg) translateZ(50px);
+            background-image: url(./images/02.png);
+            background-size: 100px 100px ;
+        }
+        .bottom1{
+            transform: rotateX(-90deg) translateZ(50px);
+            background-image: url(./images/06.png);
+            background-size: 100px 100px ;
+        }
+        @keyframes run{
+            0%{
+                transform: rotateY(0deg);
+            }
+            100%{
+                transform: rotateY(360deg);
+            }
+        }
+        .wrap:hover .front{
+            transform: translateZ(250px);
+        }
+        .wrap:hover .back{
+            transform: rotateY(180deg) translateZ(250px);
+        }
+        .wrap:hover .left{
+            transform: rotateY(-90deg) translateZ(250px);
+        }
+        .wrap:hover .right{
+            transform: rotateY(90deg) translateZ(250px);
+        }
+        .wrap:hover .top{
+            transform: rotateX(90deg) translateZ(250px);
+        }
+        .wrap:hover .bottom{
+            transform: rotateX(-90deg) translateZ(250px);
+        }
+    </style>
+        
+</head>
+<body>
+    <div class="wrap">
+        <div class="box front"></div>
+        <div class="box back"></div>
+        <div class="box left"></div>
+        <div class="box right"></div>
+        <div class="box top"></div>
+        <div class="box bottom"></div>
+        <div class="box1 front1"></div>
+        <div class="box1 back1"></div>
+        <div class="box1 left1"></div>
+        <div class="box1 right1"></div>
+        <div class="box1 top1"></div>
+        <div class="box1 bottom1"></div>
+    </div>
+</body>
+</html>

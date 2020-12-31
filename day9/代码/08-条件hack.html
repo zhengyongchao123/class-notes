@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--[if lt ie 8]>  
+        <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            font-size: 100px;
+            color: #fff;
+        }
+    </style>
+    <![endif]-->
+</head>
+<body>
+    <!-- 
+        条件hack不支持ie10以上
+        gt 大于
+        gte 大于或者等于
+        lt 小于
+        lte 小于或者等于
+     -->
+    <!--[if ie]>  
+        <p>只能在ie下看到</p>
+    <![endif]-->
+    <!--[if IE 6]>  
+        <p>只能在ie6下看到</p>
+    <![endif]-->
+    <!--[if gt ie 6]>  
+        hello world 只能在大于ie6看到
+    <![endif]-->
+    <div class="box">
+        你好 世界
+    </div>
+</body>
+</html>

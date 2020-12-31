@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        .wrap {
+            border: 1px solid #000;
+        }
+        .box1 {
+            width: 300px;
+            height: 300px;
+            background-color: red;
+            float: left;
+        }
+        .box2 {
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+            float: left;
+        }
+        /* 双冒号支持ie9+以上 */
+        /* .clearfix::after {
+            content: '';
+            display: block;
+            clear: both;
+        } */
+        /* 单冒号支持ie8 */
+        .clearfix:after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+        /* ie7及以下怎么解决 */
+        .clearfix {
+            *zoom: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap clearfix">
+        <div class="box1"></div>
+        <div class="box2"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: tomato;
+            /* 
+            resize:调整盒子大小，必须配合overflow使用,不为默认的visible 
+                none  默认
+                horizontal 可以调整宽度
+                vertical  可以调整高度
+                both  两个都能调整
+                */
+            resize: horizontal;
+            overflow: hidden;
+        }
+        .box2{
+            width: 200px;
+            height: 200px;
+            background-color: tomato;
+            padding: 30px;
+            border: 20px solid #555;
+            /* 
+            box-sizing:
+                content-box 默认情况宽高指的时内容区域
+                border-box  宽高指的是内容、内边距、边框 */
+            box-sizing:content-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+
+</body>
+</html>

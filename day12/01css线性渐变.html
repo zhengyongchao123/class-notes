@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            width: 200px;
+            height: 200px;
+            float: left;
+            background-image: linear-gradient(to left top, red 20%, gold 50%, green 80%, blue 100%);
+        }
+        .box2{
+            width: 200px;
+            height: 200px;
+            float: left;
+            background-image: linear-gradient(to right top, red 20%, gold 50%, green 80%, blue 100%);
+        }
+        .box3{
+            width: 200px;
+            height: 200px;
+            float: left;
+            /* 重复线性渐变 */
+            background-image: repeating-linear-gradient(to right,red, gold 15%,red 30%);
+        }
+    </style>
+</head>
+<body>
+    <!-- linear-gradient(to 方向，颜色1 百分比，颜色2 百分比，颜色3 百分比)
+    linear-gradient(角度值，颜色1 百分比，颜色2 百分比，颜色3 百分比)
+    -->
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+        +   div+p 紧接在div元素之后的p元素
+        :first-line  首行
+        :first-letter  首字
+        ~   div~p  选择前面有div元素的p元素 
+        :root   选择文档的根元素
+        p:empty  选择没有子元素的每个p元素
+        .wrap *:not(p)选择.wrap下面不是p元素的元素
+        ::selection  选择被用户选取的元素部分，可以改变背景颜色和字体颜色*/
+
+
+        /* div+p{
+            color: darkkhaki;
+        } */
+        /* .wrap::first-line{
+            color: darkmagenta;
+        } */
+        /* .wrap::first-letter{
+            color: darkolivegreen;
+        } */
+        /* div~p{
+            color: darkorange;
+        } */
+        /* :root{
+            color: darkorange;
+        } */
+
+        /* p{
+            width: 100px;
+            height: 30px;
+            background-color: darkorchid;
+        }
+        p:empty{
+            background-color: darkred;
+        } */
+        /* .wrap *:not(p){
+            color: darkred;
+        } */
+        /* .wrap::selection{
+            background-color: darksalmon;
+        } */
+
+    </style>
+</head>
+<body>
+    <!-- <div>1</div>
+    <p>2</p>
+    <p>3</p> -->
+    <!-- <div class="wrap">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem saepe cum aliquid! Alias eos asperiores sequi aspernatur recusandae dolorum facilis, voluptatem quis dolor provident hic corrupti nobis iure, deserunt neque.
+    </div> -->
+
+    <!-- <p>1</p>
+    <p></p>
+    <p>
+
+    </p>
+    <p> </p> -->
+    <!-- <div class="wrap">
+        <div>1</div>
+        <p>2</p>
+        <span>3</span>
+    </div> -->
+</body>
+</html>

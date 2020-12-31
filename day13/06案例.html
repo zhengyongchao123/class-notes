@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            width: 200px;
+            height: 200px;
+            border: 3px solid red;
+            border-radius: 50%;
+            position: relative;
+            overflow: hidden;
+            float: left;
+            margin-right: 20px;
+        }
+        .box1 img{
+            width: 200px;
+            height: 200px;
+        }
+        .con1{
+            width: 100px;
+            height: 200px;
+            border-radius: 50%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: all 1s ease;
+        }
+        .con1 img{
+            width: 100px;
+            height: 200px;
+        }
+        .box1:hover .con1{
+            transform: translate(-100px);
+        }
+        .con2{
+            width: 100px;
+            height: 200px;
+            border-radius: 50%;
+            position: absolute;
+            top: 0;
+            right: 0;
+            transition: all 1s ease;
+        }
+        .con2 img{
+            width: 100px;
+            height: 200px;
+        }
+        .box1:hover .con2{
+            transform: translate(100px);
+        }
+
+        .box2{
+            width: 200px;
+            height: 200px;
+            border: 3px solid red;
+            border-radius: 50%;
+            position: relative;
+            overflow: hidden;
+            float: left;
+            margin-right: 20px;
+        }
+        .box2 img{
+            width: 200px;
+            height: 200px;
+        }
+        .box2 .con1{
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            position: absolute;
+            background-color: rgb(233, 208, 176,.5);
+            top: 0;
+            left: 0;
+            transition: all 1s ease;
+            text-align: center;
+            line-height: 200px;
+            color: #fff;
+        }
+        .box2:hover .con1{
+            transform: scale(0) rotate(360deg);
+        }
+        .box3{
+            width: 200px;
+            height: 200px;
+            border: 3px solid red;
+            border-radius: 50%;
+            position: relative;
+            overflow: hidden;
+            float: left;
+            margin-right: 20px;
+        }
+        .box3 img{
+            width: 200px;
+            height: 200px;
+            transition: all 1s ease;
+        }
+        .box3:hover img{
+            transform: scale(1.5);
+        }
+        .box4{
+            width: 200px;
+            height: 200px;
+            border: 3px solid red;
+            border-radius: 50%;
+            position: relative;
+            overflow: hidden;
+            float: left;
+            margin-right: 20px;
+        }
+        .box4 img{
+            width: 200px;
+            height: 200px;
+        }
+        .box4 .con1{
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            position: absolute;
+            background-color: rgb(233, 208, 176,.5);
+            top: 0;
+            left: 0;
+            transition: all 1s ease;
+            text-align: center;
+            line-height: 200px;
+            transform:rotate(0deg);
+            transform-origin: bottom;
+            color: #fff;
+        }
+        .box4:hover .con1{
+            transform:rotate(180deg);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <img src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=3135215632,750931275&fm=26&gp=0.jpg" alt="">
+        <div class="con1">
+            <img src="./1.png" alt="">
+        </div>
+        <div class="con2">
+            <img src="./2.png" alt="">
+        </div>
+    </div>
+    <div class="box2">
+        <img src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=3135215632,750931275&fm=26&gp=0.jpg" alt="">
+        <div class="con1">cover</div>
+    </div>
+    <div class="box3">
+        <img src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=3135215632,750931275&fm=26&gp=0.jpg" alt="">
+    </div>
+    <div class="box4">
+        <img src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=3135215632,750931275&fm=26&gp=0.jpg" alt="">
+        <div class="con1">cover</div>
+    </div>
+</body>
+</html>

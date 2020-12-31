@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .wrap {
+            width: 1000px;
+            height: 500px;
+            border: 5px solid #000;
+            /* 
+                弹性盒子 display:flex/inline-flex
+                项目属性
+                    order 定义项目的排列顺序，默认为0，可以为负值，数值小的靠前
+                    flex-grow 定义项目的放大比例，默认为0，即存在空间也不放大
+                    flex-shrink 定义项目的缩小比例，默认为1，空间不足时缩小
+                    align-self 定义每个项目单独的交叉轴对齐方式
+                        当父标签有align-items时，默认根据父标签对齐方式
+                        当父标签默认align-items，默认占满整个父标签高度，前提是自己没有高度
+                        - auto 默认值。元素继承了它的父容器的align-items属性。如果没有父容器 则为"stretch"。
+                        - stretch占满整个容器的髙度。自身不设置固定高度
+                        - center交叉轴的中点对齐。
+                        - flex-start	交叉轴的起点对齐。
+                        - flex-end	交叉轴的终点对齐。
+                        - baseline	项目的第一行文字的基线对齐。
+                    flex-basis 项目长度
+                    简写：
+                    flex: flex-grow flex-shrink flex-basis; 
+             */
+            display: flex;
+        }
+
+        .box1 {
+            width: 300px;
+            height: 200px;
+            background-color: red;
+            /* flex-shrink: 0; */
+            /* align-self: baseline;
+            line-height: 100px; */
+            flex: 1;
+        }
+
+        .box2 {
+            width: 300px;
+            height: 400px;
+            background-color: green;
+            /* order: -1; */
+            /* align-self: baseline; */
+
+        }
+
+        .box3 {
+            width: 300px;
+            height: 300px;
+            background-color: blue;
+            /* order: -2; */
+            /* align-self: baseline;
+            line-height: 200px; */
+        }
+
+        .box4 {
+            width: 300px;
+            height: 300px;
+            background-color: gold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="box1">
+            1
+        </div>
+        <div class="box2">2</div>
+        <div class="box3">3</div>
+        <!-- <div class="box4"></div> -->
+    </div>
+</body>
+
+</html>

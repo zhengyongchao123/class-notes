@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            display: grid;
+            grid-template-columns: 100px 100px 100px;
+            grid-template-rows: 100px 100px 100px;
+            /* 过时属性，不推荐使用 */
+            /* grid-column-gap: 30px;
+            grid-row-gap: 30px;
+            grid-gap: 30px; */
+            /* 最新属性 */
+            /* column-gap: 10px;
+            row-gap: 30px; */
+            /* 简写 */
+            gap: 30px 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

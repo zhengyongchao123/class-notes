@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+            padding: 30px;
+            border: 30px dotted gold;
+            margin: 30px;
+            /* 
+                背景的绘制区域
+                    border-box 默认
+                    padding-box
+                    content-box
+             */
+            background-clip: content-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

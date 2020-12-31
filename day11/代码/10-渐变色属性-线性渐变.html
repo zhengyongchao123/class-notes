@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1 {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            margin-bottom: 10px;
+        }
+        .box2 {
+            width: 200px;
+            height: 200px;
+            /* 
+                linear-gradient(to 方向,颜色1 百分比,颜色2 百分比,颜色3 百分比)
+                角度 deg
+                linear-gradient(角度值,颜色1 百分比,颜色2 百分比,颜色3 百分比)
+             */
+            /* background-image: linear-gradient(to right bottom,red,gold,green); */
+            background-image: linear-gradient(30deg,red,blue,purple);
+        }
+        .box3 {
+            width: 200px;
+            height: 200px;
+            background-image: linear-gradient(to right,red 30%,gold 70%);
+        }
+        .box4 {
+            width: 200px;
+            height: 200px;
+            border: 1px solid #000;
+            background-image: linear-gradient(to right,red 50%,gold 50%);
+            background-size: 20px 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <div class="box4"></div>
+</body>
+</html>

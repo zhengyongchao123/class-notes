@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        /* 当加固定定位或者绝对定位的标签，祖先标签具有视距属性perspective的时候，会产生定位问题 */
+        body {
+            /* perspective: 2000px; */
+            background-image: url(./images/bg.jpg);
+        }
+        ul {
+            list-style-type: none;
+        }
+
+        li:nth-child(1) {
+            transform: rotateX(20deg);
+        }
+
+        li:nth-child(2) {
+            transform: rotateX(40deg);
+        }
+
+        li:nth-child(3) {
+            transform: rotateX(60deg);
+        }
+
+        li:nth-child(4) {
+            transform: rotateX(80deg);
+        }
+
+        li:nth-child(5) {
+            transform: rotateX(100deg);
+        }
+
+        li:nth-child(6) {
+            transform: rotateX(120deg);
+        }
+
+        li:nth-child(7) {
+            transform: rotateX(140deg);
+        }
+
+        li:nth-child(8) {
+            transform: rotateX(160deg);
+        }
+
+        li:nth-child(9) {
+            transform: rotateX(180deg);
+        }
+
+        li:nth-child(10) {
+            transform: rotateY(20deg);
+        }
+
+        li:nth-child(11) {
+            transform: rotateY(40deg);
+        }
+
+        li:nth-child(12) {
+            transform: rotateY(60deg);
+        }
+
+        li:nth-child(13) {
+            transform: rotateY(80deg);
+        }
+
+        li:nth-child(14) {
+            transform: rotateY(100deg);
+        }
+
+        li:nth-child(15) {
+            transform: rotateY(120deg);
+        }
+
+        li:nth-child(16) {
+            transform: rotateY(140deg);
+        }
+
+        li:nth-child(17) {
+            transform: rotateY(160deg);
+        }
+
+        li:nth-child(18) {
+            transform: rotateY(180deg);
+        }
+
+        /* 太阳 */
+
+        .sun {
+            width: 250px;
+            height: 250px;
+            position: absolute;
+            perspective: 2000px;
+            left: 50%;
+            margin-left: -150px;
+            top: 50%;
+            margin-top: -150px;
+        }
+
+        .sun ul {
+            width: 250px;
+            height: 250px;
+            position: relative;
+            animation: run 3s linear infinite;
+            transform-style: preserve-3d;
+        }
+
+        .sun ul li {
+            width: 250px;
+            height: 250px;
+            border: 1px solid orangered;
+            border-radius: 50%;
+            position: absolute;
+            top: 0;
+        }
+        .earth {
+            width: 500px;
+            height: 500px;
+            perspective: 2000px;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+        .earth .line {
+            width: 500px;
+            height: 500px;
+            border: 1px solid #fff;
+            box-shadow: 0 0 10px #fff;
+            border-radius: 50%;
+            transform-style: preserve-3d;
+            animation: earth 36s linear infinite;
+        }
+        .earth .line ul {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            left: 50%;
+            margin-left: -50px;
+            top: -50px;
+            animation: run 3s linear infinite;
+            transform-style: preserve-3d;
+        }
+        .earth .line ul li {
+            width: 100px;
+            height: 100px;
+            border: 1px solid blue;
+            border-radius: 50%;
+            position: absolute;
+            top: 0;
+        }
+
+        .spark {
+            width: 700px;
+            height: 700px;
+            perspective: 2000px;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+        .spark .line {
+            width: 700px;
+            height: 700px;
+            border: 1px solid #fff;
+            box-shadow: 0 0 10px #fff;
+            border-radius: 50%;
+            transform-style: preserve-3d;
+            animation: spark 36s linear infinite;
+        }
+        .spark .line ul {
+            width: 150px;
+            height: 150px;
+            position: absolute;
+            left: 50%;
+            margin-left: -75px;
+            top: -75px;
+            animation: run 3s linear infinite;
+            transform-style: preserve-3d;
+        }
+        .spark .line ul li {
+            width: 150px;
+            height: 150px;
+            border: 1px solid red;
+            border-radius: 50%;
+            position: absolute;
+            top: 0;
+        }
+
+        /* 自传动画 */
+        @keyframes run {
+            0% {
+                transform: rotateX(70deg) rotateY(20deg) rotateZ(0deg);
+            }
+            100% {
+                transform: rotateX(70deg) rotateY(20deg) rotateZ(360deg);
+            }
+        }
+        /* 地球公传 */
+        @keyframes earth {
+            0% {
+                transform: rotateX(50deg) rotateY(-20deg) rotateZ(0deg);
+            }
+            100% {
+                transform: rotateX(50deg) rotateY(-20deg) rotateZ(360deg);
+            }
+        }
+        /* 火星公传 */
+        @keyframes spark {
+            0% {
+                transform: rotateX(50deg) rotateY(50deg) rotateZ(0deg);
+            }
+            100% {
+                transform: rotateX(50deg) rotateY(50deg) rotateZ(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="sun">
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+    <div class="earth">
+        <div class="line">
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="spark">
+        <div class="line">
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

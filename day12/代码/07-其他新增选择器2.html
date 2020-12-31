@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+            :root 选择文档的根元素
+            p:empty 选择没有子元素的每个p元素
+            #news:target 选择当前活动的#news元素
+            .wrap *:not(p) 选择.wrap下面不是p元素的元素
+            ::selection 选择被用户选取的元素部分,可以改变背景颜色和字体颜色
+         */
+        /* :root {
+            color: red;
+        } */
+        /* .box:root {
+            color: gold;
+        } */
+        p {
+            width: 100px;
+            height: 50px;
+            border: 1px solid #000;
+        }
+        p:empty {
+            background-color: red;
+        }
+        #news:target {
+            color: deeppink;
+            display: block;
+        }
+        #news {
+            background-color: gold;
+            display: none;
+        }
+        .wrap *:not(p) {
+            color: blue;
+        }
+        .box::selection {
+            background-color: red;
+            color: gold;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div>div</div>
+    <h3>h3</h3>
+    <span>span</span>
+    <div class="wrap">
+        <div class="box">
+            box
+        </div>
+    </div> -->
+
+    <p>1</p>
+    <p> </p>
+    <p></p>
+    <p>
+
+    </p>
+    <a href="#news">点击</a>
+    <div id="news">
+        先帝创业未半而中道崩殂，今天下三分，益州疲弊，此诚危急存亡之秋也。然侍卫之臣不懈于内，忠志之士忘身于外者，盖追先帝之殊遇，欲报之于陛下也。诚宜开张圣听，以光先帝遗德，恢弘志士之气，不宜妄自菲薄，引喻失义，以塞忠谏之路也。
+    </div>
+    <div class="wrap">
+        <p>1</p>
+        <div>2</div>
+        <h3>3</h3>
+        <span>4</span>
+    </div>
+    <div class="box">
+        先帝创业未半而中道崩殂，今天下三分，益州疲弊，此诚危急存亡之秋也。然侍卫之臣不懈于内，忠志之士忘身于外者，盖追先帝之殊遇，欲报之于陛下也。诚宜开张圣听，以光先帝遗德，恢弘志士之气，不宜妄自菲薄，引喻失义，以塞忠谏之路也。
+    </div>
+</body>
+</html>

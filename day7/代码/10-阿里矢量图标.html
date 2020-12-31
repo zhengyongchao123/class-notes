@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 引入图标css文件 -->
+    <link rel="stylesheet" href="./font/iconfont.css">
+    <!-- 引入js -->
+    <script src="./font/iconfont.js"></script>
+    <style>
+        .icon {
+            width: 1em;
+            height: 1em;
+            vertical-align: -0.15em;
+            fill: currentColor;
+            overflow: hidden;
+        }
+    </style>
+    <style>
+        .box1 {
+            color: red;
+            font-size: 100px;
+            /* font-style: italic;
+            font-weight: bold; */
+            cursor: pointer;
+        }
+
+        .box1:hover {
+            color: gold;
+        }
+
+        .box2 {
+            color: green;
+            font-size: 80px;
+        }
+        .box3 {
+            font-size: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Unicode -->
+    <span class="iconfont box1">&#xe656;</span>
+    <!-- Font Class -->
+    <span class="iconfont icon-jingdong box2"></span>
+    <!-- Symbol -->
+    <svg class="icon box3" aria-hidden="true">
+        <use xlink:href="#icon-feiji"></use>
+    </svg>
+    <svg class="icon box3" aria-hidden="true">
+        <use xlink:href="#icon-weixin"></use>
+    </svg>
+</body>
+
+</html>

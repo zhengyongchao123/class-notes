@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 启用 */
+        input[type="text"]:enabled {
+            background-color: red;
+        }
+        /* 禁用 */
+        input[type="text"]:disabled {
+            background-color: blue;
+        }
+        /* 选中状态 */
+        input[type="radio"]:checked {
+            /* 放大1.5倍 */
+            transform: scale(1.5);
+        }
+        /* 获得鼠标焦点状态 */
+        input[type="number"]:focus {
+            background-color: gold;
+            border: 1px solid red;
+            /* 去掉浏览器自带黑框 */
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <input type="text" name="username">
+        <input type="text" name="password" disabled>
+        男：<input type="radio" name="sex" value="boy">
+        女：<input type="radio" name="sex" value="girl">
+
+        <input type="number">
+        <input type="number">
+        <input type="number">
+    </form>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- form  包含所有标签的东西 -->
+    <form action="">
+        <!-- 文本输入类型 -->
+        <input type="text" name="username" placeholder="请输入用户名"><br>
+        <!-- 密码输入类型 -->
+        <input type="password" name="password" placeholder="请输入密码"><br>
+        <!-- 提交按钮 -->
+        <input type="submit" value="点击"><br>
+        <!-- 单选框， 同一组name必须相同 -->
+        男<input type="radio" name="sex" value="男">  
+        女<input type="radio" name="sex" value="女"><br>
+        <!-- 复选框 -->
+        敲代码<input type="checkbox" name="hobby" value="coding">
+        打游戏<input type="checkbox" name="hobby" value="playgame">
+        睡觉<input type="checkbox" name="hobby" value="sleep">
+
+        <input type="buttom" value="按钮">
+        <!-- 上传文件类型 -->
+        <input type="file" name="file">
+        <input type="image" src="../day7/cts-index.png" width="50"><br>
+        <!-- 隐藏域  可以提交，  但页面不显示 -->
+        <input type="hidden" value="你好" name="hidden">
+        <br>
+
+        所属省：<select name="provicen" id="">
+            <option value="BJ">北京</option>
+            <option value="sH">上海</option>
+            <option value="SZ">深圳</option>
+        </select><br>
+        <!-- style="resize: none;" 可以防止放大缩小 -->
+        <textarea name="text" id="" cols="30" rows="10" style="resize: none;"></textarea><br>
+
+        <!-- label  标签，for属性对应input的id -->
+        <label for="a">猪猪侠</label>
+        <input type="radio" name="aas" id="a">
+        <label for="b">黑猫警长</label>
+        <input type="radio" name="aas" id="b">
+        <label for="c">葫芦娃</label>
+        <input type="radio" name="aas" id="c">
+    </form>
+
+
+    <!-- 
+    action什么都不写可以提交到当前页面，也可以提交到其他web浏览器
+    methed 默认是GET，可以设置POST
+        GET 一般是获取数据 POST提交数据
+        POST相对更加安全，POST的数据一般比较大，GET更小一些
+    checked 默认选中， 应用到单选框或复选框
+    selected 默认选中， 应用到下拉框
+    readonly 只读， 不能修改， 但是能提交
+    disabled 禁用， 不能修改， 也不能提交， 也可用于禁用按钮
+    placeholder 输入框提示
+    maxlength 限制输入框最大长度
+    size 用于下拉框， 设置默认显示几条选项，但是也只能选择一个
+    -->
+    <form action="https://www.baidu.com/s">
+        <input type="text" name="wd">
+        <input type="submit">
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrap{
+            width: 600px;
+            border: 5px solid black;
+            overflow: hidden;
+        }
+        .box1{
+            width: 200px;
+            background-color: blue;
+            float: left;
+            padding-bottom: 555px;
+            margin-bottom: -555px;
+        }
+        .box2{
+            width: 200px;
+            background-color:blueviolet;
+            float: left;
+            padding-bottom: 555px;
+            margin-bottom: -555px;
+        }
+        .box3{
+            width: 200px;
+            background-color:brown;
+            float: left;
+            padding-bottom: 555px;
+            margin-bottom: -555px;
+        }
+        .clearfix:after{
+            content: '';
+            display: block;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <!-- 内边距相消法：内边距设置特别大，外边距设置特别小，父标签加溢出隐藏 -->
+    <div class="wrap clearfix">
+        <div class="box1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores quisquam perferendis est maiores placeat ex magnam soluta ducimus a quo earum nihil obcaecati voluptatibus facere reprehenderit, molestias provident dolorum repellendus laboriosam distinctio esse magni architecto, nobis possimus. Nesciunt consectetur non quis modi itaque nulla, necessitatibus maiores fugit quasi perspiciatis libero reprehenderit natus dicta, sequi sapiente accusamus cupiditate quaerat officiis id expedita, unde assumenda beatae. Maiores atque corporis ipsum aspernatur doloribus perspiciatis, est amet itaque. Sint, quibusdam temporibus quo vel, corporis cum veritatis, voluptatem eius assumenda quos voluptas culpa natus illo nostrum minima. Labore hic voluptatibus cumque aliquam, vitae quibusdam tenetur.</div>
+        <div class="box2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos repellat laboriosam eum sunt! Laborum alias, suscipit placeat, dolor ducimus error nemo nulla soluta sint blanditiis sunt debitis explicabo! Officiis voluptas neque optio earum distinctio ullam delectus quisquam similique dolorum, voluptate culpa ut ex necessitatibus eius voluptates quo ad tempore! Odit!</div>
+        <div class="box3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis repellat totam earum incidunt impedit quibusdam vero assumenda deserunt corrupti ea facere praesentium ab, fuga provident quia sapiente optio ipsum inventore aliquid a. Enim, assumenda placeat odit facere facilis deleniti id veritatis aspernatur vero obcaecati beatae. Facere porro vero labore eos iure numquam, hic eligendi aliquam consequuntur, quae expedita eius ex repellendus ipsam accusamus ullam cum sit temporibus, dolorem quis. Quisquam impedit incidunt fugiat nisi saepe quos, esse distinctio rem alias!</div>
+    </div>
+</body>
+</html>

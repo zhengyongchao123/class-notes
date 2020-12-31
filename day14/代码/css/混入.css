@@ -1,0 +1,40 @@
+.public {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  border: 5px solid #000;
+  border-radius: 50%;
+}
+.box1 {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  border: 5px solid #000;
+  border-radius: 50%;
+  font-size: 30px;
+  color: #fff;
+}
+.box2 {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  border: 5px solid #000;
+  border-radius: 50%;
+  font-size: 40px;
+  color: blue;
+}
+.box3 {
+  background-color: #0000ff;
+  border-radius: 20px;
+  width: 200px;
+  height: 200px;
+}
+.box4 {
+  background-color: #ff0000;
+  border-radius: 10px;
+  width: 100px;
+  height: 100px;
+}
+.box5 {
+  box-shadow: 10px 10px 10px 0 #ff0000;
+}

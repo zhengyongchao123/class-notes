@@ -1,0 +1,50 @@
+@color:red;
+@color2:blue;
+//混入
+.public{
+    width: 200px;
+    height: 200px;
+    background-color: @color2;
+}
+.box1{
+    .public
+}
+
+//混入加参数
+.box (@a:10px,@b:20px, @c:30px ,@color3:green,@color4:pink){
+    background-color: @color3;
+    width: @a;
+    height: @b;
+    font-size: @c;
+    color:@color4 ;
+    box-shadow: @arguments;//传入所有值
+    
+}
+.box2{
+    .box(200px, 200px,20px,red);
+}
+//嵌套
+.box3{
+    .public;
+    .box33{
+        width: 100px;
+        height: 100px;
+        .box333{
+            width: 100px;
+            height: 50px;
+            color: @color;
+        }
+    }
+}
+//继承
+.box4:extend(.public){
+    color: @color;
+}
+//运算
+@num:200px;
+.box5{
+    width:@num * 2;
+    height: @num + 100px;
+    background-color: @color2;
+
+}

@@ -1,0 +1,175 @@
+.con {
+    width: 7.5rem;
+    margin: 0 auto;
+    background-color: #f6f6f6;
+}
+nav {
+    width: 7.1rem;
+    height: 0.88rem;
+    margin: 0 auto;
+    display: flex;
+    padding: 0 0.2rem;
+    justify-content: space-between;
+    background-color: #f26b11;
+    color: #fff;
+  // box-shadow: 0 0 0.01rem 0.01rem #ccc;
+    span {
+        font-size: 0.24rem;
+        line-height: 0.88rem;
+    }
+    span:nth-child(3){
+        font-size: 0.5rem;
+        margin-top: -0.1rem;
+    }
+}
+header{
+    width: 7.1rem;
+    height: 2.4rem;
+    display: flex;
+    align-items: center;
+    padding: 0 0.2rem;
+    background-color: #f26b11;
+    img{
+        width: 1.45rem;
+        height: 1.45rem;
+        border-radius: 50%;
+        border: 2px solid #fff;
+    }
+    .text1{
+        width: 1rem;
+        height: 0.8rem;
+        color: #fff;
+        line-height: 0.4rem;
+        margin-left: 0.1rem;
+        span:nth-child(3){
+            color: #222;
+        }
+    }
+    .text2{
+        width: 1.7rem;
+        height: 0.7rem;
+        margin-left: 2.6rem;
+        background-color: #fff;
+        color: #f26b11;
+        text-align: center;
+        line-height: 0.7rem;
+    }
+}
+.box1{
+    width: 7.5rem;
+    height: 1.45rem;
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 0.2rem;
+    ul{
+        width: 7.1rem;
+        height: 1.45rem;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        color: #999;
+        li{
+            height: 1.45rem;
+            width: 1.5rem;
+            background-image: url(../images/mine_images/icon_1.jpg);
+            background-repeat: no-repeat;
+            background-size: 0.4rem 0.4rem;
+            background-position: center 0.3rem ;
+            text-align: center;
+            line-height: 1.9rem;
+        }
+        li:nth-child(2){
+            background-image: url(../images/mine_images/icon_2.jpg);
+        }
+        li:nth-child(3){
+            background-image: url(../images/mine_images/icon_3.jpg);
+        }
+    }
+}
+main{
+    width: 7.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    .con1{
+        width: 6.3rem;
+        height: 1.14rem;
+        padding-left: 0.8rem;
+        line-height: 1.14rem;
+        display: flex;
+        justify-content: space-between;
+        color: #666;
+        border-bottom: 1px solid #ccc;
+        background-image: url(../images/mine_images/icon_4.jpg);
+        background-size: 0.4rem;
+        background-repeat: no-repeat;
+        background-position: 0.3rem 0.35rem;
+        .span1{
+            color: #e43a3d;
+        }
+    }
+    .con1:nth-child(2){
+        background-image: url(../images/mine_images/icon_5.jpg);
+    }
+    .con1:nth-child(3){
+        background-image: url(../images/mine_images/icon_6.jpg);
+    }
+    .con1:nth-child(4){
+        background-image: url(../images/mine_images/icon_7.jpg);
+    }
+    .con1:nth-child(5){
+        background-image: url(../images/mine_images/icon_8.jpg);
+    }
+}
+footer{
+    width: 7.5rem;
+    height: 1.45rem;
+    position: fixed;
+    left: 50%;
+    margin-left: -3.75rem;
+    background-color: #fff;
+    border-top: 1px solid #999;
+    bottom: 0;
+    ul{
+        width: 7.1rem;
+        height: 1.45rem;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        li{
+            height: 1.45rem;
+            width: 1rem;
+            background-image: url(../images/public/icon_8.jpg);
+            background-repeat: no-repeat;
+            background-size: 0.4rem 0.4rem;
+            background-position: 0.3rem 0.5rem ;
+            text-align: center;
+            line-height: 2.2rem;
+            a{
+                color:  #777;
+            }
+        }
+        li:hover{
+            color: #f26b11;
+            background-image: url(../images/public/icon_6.jpg);
+            a{
+                color: #f26b11;
+            }
+        }
+        li:nth-child(2){
+            background-image: url(../images/public/icon_7.jpg);
+        }
+        li:nth-child(2):hover{
+            color: #f26b11;
+            background-image: url(../images/public/icon_9.jpg);
+        }
+        li:nth-child(3){
+            background-image: url(../images/public/icon_5.jpg);
+        }
+        li:nth-child(3):hover{
+            color: #f26b11;
+            background-image: url(../images/public/icon_10.jpg);
+        }
+    }
+}

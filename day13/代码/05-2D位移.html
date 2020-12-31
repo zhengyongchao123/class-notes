@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        .box {
+            width: 300px;
+            height: 300px;
+            background-color: red;
+            /* 
+                变换：transform
+                    2D位移
+            */
+            /* transform: translate(100px,100px); */
+            transform: translateX(50px) translateY(50px);
+        }
+        .box1 {
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+        }
+        /* 
+            位移和定位的区别：
+                重绘：页面重新绘制
+                1.定位会引起页面的重绘，但是位移不会
+                2.页面布局时选择用定位，做动画效果时选择用位移
+        */
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <div class="box1"></div>
+</body>
+</html>

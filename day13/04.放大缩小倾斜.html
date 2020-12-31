@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: coral;
+            margin: 0 auto;
+            margin-top: 100px;
+            transition: all 1s linear;
+            /* 默认放大围绕中心点 */
+            /* transform-origin: top left; */
+        }
+        .box:hover{
+            transform: scale(1.5);
+            /* transform: scale(-1.5); */
+            /* transform: scalex(1.5); */
+            /* transform: scaley(1.5); */
+        }
+
+
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: coral;
+            margin: 0 auto;
+            margin-top: 100px;
+            transition: all 1s linear;
+            
+        }
+        .box1:hover{
+            /* transform: skew(45deg ,45deg); */
+            transform: skewx(45deg);
+            /* transform: skewy(45deg); */
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <div class="box1"></div>
+</body>
+</html>

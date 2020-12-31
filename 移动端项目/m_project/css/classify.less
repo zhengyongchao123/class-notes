@@ -1,0 +1,104 @@
+.con {
+    width: 7.5rem;
+    margin: 0 auto;
+    background-color: #f6f6f6;
+}
+nav {
+    width: 7.1rem;
+    height: 0.88rem;
+    margin: 0 auto;
+    display: flex;
+    padding: 0 0.2rem;
+    justify-content: space-between;
+    background-color: #f26b11;
+    color: #fff;
+  // box-shadow: 0 0 0.01rem 0.01rem #ccc;
+    a{
+        color: #fff;
+        font-size: 0.4rem;
+        line-height: 0.88rem;
+    }
+    span {
+        font-size: 0.4rem;
+        line-height: 0.88rem;
+    }
+    span:nth-child(3){
+        margin-top: -0.1rem;
+    }
+}
+main {
+    width: 7.5rem;
+    display: flex;
+    background-color: #fff;
+    .left {
+        width: 1.62rem;
+        display: flex;
+        flex-direction: column;
+        padding-top: 0.2rem;
+        padding-bottom: 2rem;
+        border-right: 1px solid #666;
+        span{
+            display: block;
+            color: #555;
+            width: 1.59rem;
+            height: 0.5rem;
+            text-align: center;
+            line-height: 0.5rem;
+            margin-bottom: 0.6rem;
+            border-left: 0.03rem solid #fff;
+        }
+        span:hover{
+            color: #f26b11;
+            border-left: 0.03rem solid #f26b11;
+        }
+    }
+    .right{
+        width: 5.88rem;
+        display: flex;
+        flex-direction: column;
+        padding-top: 0.2rem;
+        .box1{
+            width: 5.48rem;
+            display: flex;
+            flex-direction: column;
+            padding: 0 0.2rem;
+            .text{
+                width: 5.48rem;
+                height: 0.48rem;
+                display: flex;
+                justify-content:space-between;
+                align-items: center;
+                span{
+                    display: block;
+                    width: 1.2rem;
+                    height: 0.4rem;
+                    color: #444;
+                }
+            }
+            .con_{
+                width: 5.48rem;
+                display: flex;
+                justify-content: space-around;
+                flex-wrap: wrap;
+                .con_1{
+                    width: 1.8rem;
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    color: #444;
+                    font-size: 14px;
+                    margin-bottom: 0.2rem;
+                    img{
+                        width: 1.32rem;
+                        height: 1.68rem;
+                        margin-bottom: 0.1rem;
+                    }
+
+                }
+            }
+        }
+        .box1:nth-child(2){
+            margin-top: 1.3rem;
+        }
+    }
+}

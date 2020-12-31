@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: gold;
+            position: relative;
+            left: 0;
+            animation-name: run;
+            animation-duration: 3s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            /* 
+                动画播放还是暂停
+                    running 播放
+                    paused 暂停
+            */
+            animation-play-state: paused;
+        }
+
+        @keyframes run {
+            0% {
+                left: 0;
+            }
+
+            100% {
+                left: 800px;
+            }
+        }
+
+        .box:hover {
+            animation-play-state: running;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+</body>
+
+</html>

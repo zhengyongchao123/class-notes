@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrap {
+            width: 400px;
+            height: 400px;
+            border: 10px solid #000;
+        }
+        .box1 {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            border-radius: 50%;
+            position: absolute;
+            left: 100px;
+            top: 100px;
+        }
+        .box2 {
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+            position: absolute;
+            z-index: 1;
+        }
+        /* 
+            层级关系 z-index
+                1.默认定位的标签一定在没加定位的标签上方。
+                2.默认是0，可以设置1、2、3、4，也可以是负值-1、-2，数值大的在上方
+                3.z-index属性必须要配合定位使用，否则无效
+         */
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="box1"></div>
+        <div class="box2"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,100 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    padding: 0 20px;
+}
+h4{
+    width: 100%;
+    height: 43px;
+    border-bottom: 1px solid #999;
+    line-height: 55px;
+}
+.nav{
+    width: 100%;
+    height: 70px;
+    border-bottom: 1px solid #999;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.nav ul{
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+.nav ul li{
+    width: 65px;
+    height: 35px;
+    border: 1px solid #999;
+    text-align: center;
+    line-height: 35px;
+    background-color: #f4f4f4;
+}
+.nav .search{
+    width: 310px;
+    height: 70px;
+    line-height: 28px;
+    color: #333;
+}
+.nav .search input{
+    width: 183px;
+    height: 28px;
+    margin-top: 21px;
+}
+.nav .search input:nth-child(2){
+    width: 45px;
+    height: 28px;
+}
+.nav .search2{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: flex-end;
+    display: none;
+}
+.nav .search2 .con{
+    width: 80px;
+    height: 30px;
+    line-height: 22px;
+    margin-top: 17.5px;
+    background-color: #bcb66c;
+    text-align: center;
+}
+.nav .search2 .icon{
+    color: #96210f;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+.tab{
+    width: 100%;
+}
+table{
+    width: 1329px;
+    border: solid #ccc;
+    border-width: 1px 0 0 1px;
+}
+th{
+    height: 48px;
+    border: solid #ccc;
+    border-width: 0 1px 1px 0;
+}
+th:first-child{
+    width: 60px;
+    border: solid #ccc;
+    border-width: 0 1px 1px 0;
+}
+td{
+    height: 34px;
+    padding-left: 23px;
+    font-size: 14px;
+    border: solid #ccc;
+    border-width: 0 1px 1px 0;
+}
+td span{
+    padding: 4px;
+    background-color: #dbdbdb;
+}

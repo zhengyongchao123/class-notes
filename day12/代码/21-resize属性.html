@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            /* 
+                resize:调整盒子大小, 必须配合overflow属性使用，不为默认的visible
+                    none 默认
+                    horizontal 可以调整宽度
+                    vertical 可以调整高度
+                    both 两个都能调整
+             */
+            resize: both;
+            overflow: auto;
+        }
+    </style>
+</head>
+<body>
+    <!-- <textarea name="" id="" cols="30" rows="10" style="resize: none;"></textarea> -->
+    <div class="box">
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            border: 1px solid #000;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <!-- 文本输入框 -->
+        <!-- <input type="text" name="username"> -->
+        <!-- 地址类型: 必须是http:// 或者https:// 开头的 -->
+        <input type="url" name="myUrl">
+        <!-- 邮箱类型: 必须有@，只验证格式，不验证真假 -->
+        <input type="email" name="myEmail">
+        <!-- 搜索类型: 自带一个删除的×按钮 -->
+        <input type="search" name="search">
+        <!-- 数字类型: 只能输入数字类型, step="n" 只能输入n的倍数 -->
+        <input type="number" name="number" step="3">
+        <!-- 滑动条 -->
+        <input type="range" name="range" max="100" value="20" min="0">
+        <!-- 颜色 -->
+        <input type="color" name="color" id="color">
+        <hr>
+        <!-- 日期类型 -->
+        <input type="date" name="date">
+        <!-- 日期带时分 -->
+        <input type="datetime-local" name="datetime">
+        <!-- 月份 -->
+        <input type="month" name="month">
+        <!-- 时间 -->
+        <input type="time" name="time">
+        <!-- 星期 -->
+        <input type="week" name="week">
+        <hr>
+        <input type="submit">
+        <hr>
+        <div class="box" id="box"></div>
+    </form>
+    <button id="btn">点击</button>
+    <script>
+        var color = document.getElementById('color');
+        var btn = document.getElementById('btn');
+        var box = document.getElementById('box');
+        // 在控制台打印
+        // console.log(color)
+        // console.log(btn)
+        btn.onclick = function () {
+            console.log( color.value)
+            box.style.backgroundColor = color.value;
+        }
+    </script>
+</body>
+</html>

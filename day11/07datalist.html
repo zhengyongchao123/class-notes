@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- inputde的list属性，对应datalist标签的id值 -->
+    <!-- autofocus  默认获取鼠标焦点 -->
+    <!-- required 必填项 -->
+    <!-- pattern  后边写正则表达式检验 -->
+    <!-- multiple  设置可以多选，一般应用到file类型 -->
+    <input type="text" list="sheep" placeholder="请输入" autofocus name="sheep">
+    <datalist id="sheep">
+        <option value="喜羊羊"></option>
+        <option value="美羊羊"></option>
+        <option value="懒羊羊"></option>
+        <option value="沸羊羊"></option>
+        <option value="灰太狼"></option>
+        <option value="红太狼"></option>
+        <option value="蕉太狼"></option>
+    </datalist>
+    <input type="text" name="username" required>
+    <input type="submit" value="点击">
+
+</body>
+</html>

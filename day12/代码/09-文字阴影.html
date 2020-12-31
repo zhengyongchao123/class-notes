@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 100%;
+            height: 150px;
+            background-color: red;
+            font-size: 100px;
+            color: #fff;
+            /* 
+                text-shadow
+                    1.水平位置，必需
+                    2.垂直位置，必需
+                    3.模糊距离
+                    4.阴影的颜色
+             */
+            text-shadow: 10px 10px 10px black;
+        }
+        /* 发光文字 */
+        .box1 {
+            width: 100%;
+            height: 150px;
+            line-height: 150px;
+            text-align: center;
+            background-color: blue;
+            font-size: 100px;
+            color: #fff;
+            text-shadow: 0 0 5px gold
+            ,0 0 10px gold
+            ,0 0 15px gold
+            ,0 0 20px gold;
+        }
+        /* 凸起文字 */
+        .box2 {
+            width: 100%;
+            height: 150px;
+            line-height: 150px;
+            text-align: center;
+            background-color: #ccc;
+            font-size: 100px;
+            color: #ccc;
+            text-shadow: -1px -1px #fff,1px 1px #000;
+        }
+        /* 凹下文字 */
+        .box3 {
+            width: 100%;
+            height: 150px;
+            line-height: 150px;
+            text-align: center;
+            background-color: #ccc;
+            font-size: 100px;
+            color: #ccc;
+            text-shadow: 1px 1px #fff,-1px -1px #000;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        hello world
+    </div>
+    <div class="box1">
+        hello world
+    </div>
+    <div class="box2">
+        hello world
+    </div>
+    <div class="box3">
+        hello world
+    </div>
+</body>
+</html>

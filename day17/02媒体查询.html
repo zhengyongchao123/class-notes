@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <!-- 如果可能，调用 chome 内核，或者高版本的 IE 内核 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <!-- 兼容不支持 viewport 的设备（魅族） -->
+    <meta name="HandheldFriendly" content="true">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 18%;
+            height: 200px;
+            float: left;
+            margin: 0 1%;
+            margin-top: 2%;
+            background-color: brown;
+        }
+
+        @media(max-width: 1200px) {
+            .box {
+                width: 23%;
+            }
+        }
+
+        @media(max-width: 972px) {
+            .box {
+                width: 31%;
+            }
+        }
+
+        @media(max-width: 768px) {
+            .box {
+                width: 48%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+</body>
+
+</html>

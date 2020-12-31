@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./html5shiv.js"></script>
+    <style>
+        header{
+            background-color: blueviolet;
+            height: 100px;
+        }
+        nav{
+            background-color: brown;
+            height: 50px;
+        }
+        main{
+            height: 400px;
+            background-color: burlywood;
+        }
+        aside{
+            background-color: cadetblue;
+            width: 200px;
+            height: 400px;
+            float: left;
+        }
+        article{
+            background-color: chartreuse;
+            width: 800px;
+            height: 400px;
+            float: left;
+        }
+        section{
+            background-color: chocolate;
+            width: 200px;
+            height: 200px;
+            margin: 0 auto;
+        }
+        footer{
+            height: 100px;
+            background-color: coral;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+    新增结构标签是块级标签
+    优点：
+        1.避免起名字困扰
+        2.更加语义化
+        3.不需要加class
+    -->
+    <header>
+        这是头部
+    </header>
+    <nav>
+        导航栏
+    </nav>
+    <main>
+        <aside>左侧</aside>
+        <article>
+            <section>
+<span>aaaaaaaaa</span>
+            </section>
+        </article>
+    </main>
+    <footer>
+        这里是页脚
+    </footer>
+</body>
+</html>

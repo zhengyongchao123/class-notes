@@ -1,0 +1,207 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.nav{
+    width: calc(100% - 40px);
+    height: 75px;
+    background-color: #ea967a;
+    padding-left: 40px;
+    line-height: 75px;
+    color: #fff;
+    font-size: 20px;
+}
+main{
+    width: calc(100% - 50px);
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    background-color: #ececec;
+    font-size: 14px;
+}
+main .text1{
+    width: 100%;
+    height: 35px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 17px 0;
+}
+img{
+    width: 20px;
+    height: 20px;
+}
+main .text1 span{
+    display: block;
+    width: 78px;
+    margin-right: 30px;
+}
+main .text1 input{
+    width: 840px;
+    height: 20px;
+}
+main .text2{
+    width: 100%;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    margin: 17px 0;
+}
+main .text2 .box1{
+    display: flex;
+}
+main .text2 span{
+    display: block;
+    width: 78px;
+    margin-right: 30px;
+}
+main .text2 .box2{
+    display: flex;
+}
+main .text2 .box3{
+    display: flex;
+}
+main .text2 .check{
+    width: 90px;
+    height: 30px;
+    border: 1px solid #ccc;
+    line-height: 30px;
+    border-radius: 5px;
+    margin-right: 5px;
+    padding-left: 10px;
+}
+main .text2 .con{
+    width: 70px;
+    height: 30px;
+    background-color: #4f86bc;
+    line-height: 30px;
+    color: #fff;
+    /* margin-left: 10px; */
+    border-radius: 5px;
+    padding-left: 10px;
+}
+main .text3{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+}
+main .text3 .box1{
+    width: 180px;
+    height: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    line-height: 30px;
+}
+main .text3 .box1 span{
+    /* display: block;
+    width: 78px; */
+    margin-right: 30px;
+}
+main .text3 .box1 input{
+    width: 156px;
+    height: 24px;
+}
+main .text4{
+    width: 100%;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    margin: 17px 0;
+}
+main .text4 span{
+    display: block;
+    width: 98px;
+    height: 35px;
+    margin-right: 30px;
+    line-height: 35px;
+}
+main .text4 span:last-child{
+    width: 400px;
+}
+main .text4 input{
+    width: 840px;
+    height: 20px;
+}
+main .text5{
+    width: 100%;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    margin: 17px 0;
+}
+main .text5 span{
+    display: block;
+    width: 78px;
+    margin-right: 30px;
+}
+main .text5 input{
+    margin-left: 5px;
+}
+main .text5 input:last-child{
+    margin-left: 30px;
+}
+main .text6{
+    width: 100%;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    margin: 17px 0;
+}
+main .text6 .box{
+    display: flex;
+    margin-right: 30px;
+}
+img{
+    display: block;
+    width: 20px;
+    height: 20px;
+}
+main .text6 .box span{
+    display: block;
+    width:78px;
+}
+main .text6 input{
+    width: 170px;
+    height: 20px;
+}
+main .text7{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    margin: 17px 0;
+}
+main .text7 .box{
+    display: flex;
+    width: 100px;
+}
+img{
+    width: 20px;
+    height: 20px;
+}
+textarea{
+    /* width: calc (100% - 100px); */
+    height: 194px;
+}
+main .button{
+    width: 340px;
+    height: 35px;
+    margin: 35px auto;
+    display: flex;
+    justify-content: space-around;
+    color: #fff;
+}
+main .button .box1{
+    width: 85px;
+    height: 35px;
+    background-color: #4f86bc;
+    text-align: center;
+    line-height: 35px;
+    border-radius: 5px;
+}
+main .button .box1:nth-child(2){
+    background-color: #ea967a;
+}
+main .button .box1:nth-child(3){
+    background-color: #bbb;
+}

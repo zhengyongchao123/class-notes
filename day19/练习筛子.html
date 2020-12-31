@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrap{
+            width: 300px;
+            height: 300px;
+            border: 2px solid #000;
+            display: grid;
+            grid-template-columns: repeat(3,100px);
+            grid-template-rows: repeat(3,100px);
+            border-radius: 10px;
+            grid-template-areas: 'a b c''d e f''g h i';
+            place-items: center;
+            float: left;
+        }
+        .box1{
+            width: 50px;
+            height: 50px;
+            border-radius:50%;
+            background-color: black;
+            grid-area: e;
+        }
+        .box2{
+            width: 50px;
+            height: 50px;
+            border-radius:50%;
+            background-color: black;
+            grid-area: a;
+        }
+        .box2:nth-child(2){
+            grid-area: i;
+        }
+        .box3{
+            width: 50px;
+            height: 50px;
+            border-radius:50%;
+            background-color: black;
+            grid-area: a;
+        }
+        .box3:nth-child(2){
+            grid-area: e;
+        }
+        .box3:nth-child(3){
+            grid-area: i;
+        }
+        .box4{
+            width: 50px;
+            height: 50px;
+            border-radius:50%;
+            background-color: black;
+            grid-area: a;
+        }
+        .box4:nth-child(2){
+            grid-area: c;
+        }
+        .box4:nth-child(3){
+            grid-area: g;
+        }
+        .box4:nth-child(4){
+            grid-area: i;
+        }
+        .box5{
+            width: 50px;
+            height: 50px;
+            border-radius:50%;
+            background-color: black;
+            grid-area: a;
+        }
+        .box5:nth-child(2){
+            grid-area: c;
+        }
+        .box5:nth-child(3){
+            grid-area: e;
+        }
+        .box5:nth-child(4){
+            grid-area: g;
+        }
+        .box5:nth-child(5){
+            grid-area: i;
+        }
+        .wrap6{
+            width: 300px;
+            height: 300px;
+            border: 2px solid #000;
+            display: grid;
+            grid-template-columns: repeat(2,150px);
+            grid-template-rows: repeat(3,100px);
+            border-radius: 10px;
+            place-items: center;
+            float: left;
+        }
+        .box6{
+            width: 50px;
+            height: 50px;
+            border-radius:50%;
+            background-color: black;
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="box1"></div>
+    </div>
+    <div class="wrap">
+        <div class="box2"></div>
+        <div class="box2"></div>
+    </div>
+    <div class="wrap">
+        <div class="box3"></div>
+        <div class="box3"></div>
+        <div class="box3"></div>
+    </div>
+    <div class="wrap">
+        <div class="box4"></div>
+        <div class="box4"></div>
+        <div class="box4"></div>
+        <div class="box4"></div>
+    </div>
+    <div class="wrap">
+        <div class="box5"></div>
+        <div class="box5"></div>
+        <div class="box5"></div>
+        <div class="box5"></div>
+        <div class="box5"></div>
+    </div>
+    <div class="wrap6">
+        <div class="box6"></div>
+        <div class="box6"></div>
+        <div class="box6"></div>
+        <div class="box6"></div>
+        <div class="box6"></div>
+        <div class="box6"></div>
+    </div>
+</body>
+</html>

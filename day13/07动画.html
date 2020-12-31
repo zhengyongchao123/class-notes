@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+        调用动画
+            1.animation-name 动画名称
+            2.animation-duration 动画完成一次用的时间
+            3.animation-timing-function 动画速度曲线
+                linear 匀速
+                ease 慢速开始，中间快，慢速结束
+                ease-in 慢速开始
+                ease-out 慢速结束
+                ease-in-out 慢速开始和结束
+            4.animation-delay 动画延迟时间
+            5.animation-iteration-count 动画播放的次数
+                1， 2， 3， 4，.....n
+                infinite 无限次
+            6.animation-direction 是否轮流反向
+                normal 正常播放
+                alternate 设置为轮流反向播放（反向占用一次次数）
+            7.animation-fill-mode 属性规定动画在播放之前或之后，其动画效果是否可见
+                forward： 动画停留在结束的位置
+                backwards： 动画在延迟时，停留在开始的位置
+                both： forward 和 backwards都生效
+            8.animation-play-state 动画播放还是暂停
+                running 播放
+                paused 暂停
+            */
+        .box {
+            /* width: 200px;
+            height: 200px;
+            background-color: cadetblue;
+            animation-name: run;
+            animation-duration: 1s;
+            animation-timing-function: ease-in;
+            animation-delay: 1s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-fill-mode: both;
+            animation-play-state: running; */
+            animation: run 1s ease-in 1s infinite alternate both running ;
+        }
+        .box:hover{
+            animation-play-state: paused;
+        }
+        /* 定义动画 */
+        @keyframes run {
+            0% {
+                width: 200px;
+                height: 200px;
+                background-color:#fff;
+            }
+
+            100% {
+                width: 200px;
+                height: 200px;
+                background-color: blue;
+                border-radius: 50%;
+                margin-left: 1200px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+</body>
+
+</html>

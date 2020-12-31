@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- script 内部写js脚本 -->
+    <script>
+        // 定义函数
+        function auto() {
+            // 获取html宽度（设备宽度）
+            // var 变量名 ： 声明一个变量等于当前设备宽度
+            var deviceWidth = document.documentElement.clientWidth;
+            // 在控制台打印
+            // console.log(deviceWidth);
+            // 判断设计图宽度
+            // if (deviceWidth > 750) {
+            //     deviceWidth = 750;
+            // }
+            // 根据当前设备宽度算出html对应的font-size值
+            var fs = deviceWidth / 750 * 100;
+            console.log(fs)
+            // 赋值给html的font-size
+            document.documentElement.style.fontSize = fs + "px";
+        }
+        // 每次刷新调用一次
+        auto();
+        // 屏幕宽度改变时调用
+        window.onresize = function () {
+            auto();
+        }
+    </script>
+    <style>
+        .box {
+            width: 3rem;
+            height: 3rem;
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+</body>
+
+</html>

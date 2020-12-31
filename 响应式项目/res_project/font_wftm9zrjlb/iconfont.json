@@ -1,0 +1,65 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "1220018",
+      "name": "用户",
+      "font_class": "yonghu-copy",
+      "unicode": "e607",
+      "unicode_decimal": 58887
+    },
+    {
+      "icon_id": "2720885",
+      "name": "右箭头",
+      "font_class": "youjiantou",
+      "unicode": "e608",
+      "unicode_decimal": 58888
+    },
+    {
+      "icon_id": "3256792",
+      "name": "注销",
+      "font_class": "zhuxiao",
+      "unicode": "e6d7",
+      "unicode_decimal": 59095
+    },
+    {
+      "icon_id": "6233163",
+      "name": "文件",
+      "font_class": "duomeitiicon-",
+      "unicode": "e609",
+      "unicode_decimal": 58889
+    },
+    {
+      "icon_id": "6721961",
+      "name": "下三角",
+      "font_class": "lower-triangle",
+      "unicode": "e502",
+      "unicode_decimal": 58626
+    },
+    {
+      "icon_id": "9621703",
+      "name": "商品",
+      "font_class": "shangpin",
+      "unicode": "e615",
+      "unicode_decimal": 58901
+    },
+    {
+      "icon_id": "12670533",
+      "name": "管理员",
+      "font_class": "guanliyuan",
+      "unicode": "e503",
+      "unicode_decimal": 58627
+    },
+    {
+      "icon_id": "18443520",
+      "name": "订单管理",
+      "font_class": "icon-dingdan",
+      "unicode": "e506",
+      "unicode_decimal": 58630
+    }
+  ]
+}

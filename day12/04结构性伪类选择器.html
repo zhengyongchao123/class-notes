@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 选择其父元素下的第一个元素 */
+        /* li:first-child{
+            color: coral;
+        } */
+        /* 选择其父元素下的最后一个元素 */
+        /* li:last-child{
+            color: cornflowerblue;
+        } */
+
+        /* :nth-child(n)   n可以是数字  公式  关键字 */
+        /* 数字：代表其父元素下的第几个元素 */
+        /* li:nth-child(3){
+            color: darkblue;
+        } */
+        /* 公式：2n代表偶数，2n+1代表奇数 */
+        /* li:nth-child(2n){
+            color:crimson;
+        } */
+        /* 关键字：odd代表奇数，even代表偶数 */
+        /* li:nth-child(odd){
+            color: cyan;
+        } 
+        li:nth-child(even){
+            color: darkcyan;
+        }  */
+        /* 倒数 */
+        /* li:nth-last-child(2n){
+            color: darkgoldenrod;
+        } */
+
+
+        /* h3:nth-of-type()  当前标签类型中第几个 */
+        .wrap h3:nth-of-type(2){
+            color: darkgray;
+        }
+        .wrap p:nth-of-type(2){
+            color: darkgray;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+    </ul>
+    <div class="wrap">
+        <h3>1</h3>
+        <p>2</p>
+        <span>3</span>
+        <div>4</div>
+        <h3>1</h3>
+        <p>2</p>
+        <span>3</span>
+        <div>4</div>
+    </div>
+</body>
+</html>

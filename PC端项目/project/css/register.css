@@ -1,0 +1,142 @@
+body{
+    background-color: #eee;
+}
+.wrap{
+    min-width: 1190px;
+    height: 600px;
+    background-color: #fff;
+}
+.wrap .header{
+    width: 1190px;
+    height: 108px;
+    /* background-color: rosybrown; */
+    overflow: hidden;
+    margin: 0 auto;
+}
+.wrap .header img{
+    width: 200px;
+    height: 50px;
+    margin-top: 29px;
+    margin-left: 260px;
+    float: left;
+}
+.wrap .header .text{
+    margin-left: 40px;
+    font-size: 26px;
+    width: 200px;
+    height: 26px;
+    color: #888;
+    float: left;
+    margin-top: 41px;
+}
+.wrap .body{
+    min-width: 1349px;
+    height: 480px;
+    background-color: #f6f6f6;
+    overflow: hidden;
+}
+.wrap .body .content{
+    width: 350px;
+    height: 380px;
+    background-color: #fff;
+    margin: 0 auto;
+    margin-top: 50px;
+    border-top: 3px solid #f76915;
+}
+.wrap .body .content .con_body{
+    width: 280px;
+    height: 325px;
+    padding-left: 35px;
+    padding-right: 35px;
+    /* border-bottom: 1px solid #ccc; */
+}
+.wrap .body .content .con_body .box{
+    height: 65px;
+    font-size: 18px;
+    text-align: center;
+    color: #333;
+    line-height: 65px;
+}
+.wrap .body .content .con_body .box2{
+    height: 37px;
+    float: left;
+}
+.wrap .body .content .con_body .box2 .mail{
+    width: 35px;
+    height: 35px;
+    border: 1px solid #999;
+    float: left;
+    font-size: 20px;
+    text-align: center;
+    line-height: 35px;
+    background-color: #f6f6f6;
+    /* margin-bottom: 10px; */
+    color: #555;
+}
+.wrap .body .content .con_body .box2 .username{
+    border: 1px solid #999;
+    width: 230px;
+    height: 35px;
+    float: left;
+    /* margin-bottom: 10px; */
+    padding-left: 5px;
+}
+.wrap .body .content .con_body .number{
+    border: 1px solid #999;
+    width: 205px;
+    height: 35px;
+    float: left;
+    margin-bottom: 10px;
+    padding-left: 5px;
+}
+.wrap .body .content .con_body .box1{
+    color: #f76915;
+    height: 30px;
+    line-height: 30px;
+    float: left;
+
+}
+.wrap .body .content .con_body img{
+    display: block;
+    width: 65px;
+    height: 35px;
+    float: left;
+}
+.wrap .body .content .con_body .log{
+    /* border: 1px solid #555; */
+    width: 280px;
+    height: 35px;
+    float: left;
+    background-color: #f26b11;
+    color: #f1f1f1;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.wrap .body .content .con_body .span1{
+    float: right;
+    color: #555;
+}
+.wrap .body .content .reg{
+    width: 350px;
+    height: 50px;
+    color: #333;
+    line-height: 50px;
+    text-align: center;
+}
+.wrap .body .content .reg a{
+    color: #f76900;
+}
+
+
+.foot{
+    min-width: 1349px;
+    height: 100px;
+    padding-top: 20px;
+}
+.foot .text_top{
+    margin-top: 10px;
+    height: 25px;
+    color: #999;
+    text-align: center;
+    line-height: 20px;
+}

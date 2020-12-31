@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+            过渡属性
+                transition-property 添加过渡效果的css样式
+                    1.设置某一个css样式，多个用逗号分隔
+                    2.all代表所有的css样式都有过渡效果
+                transition-duration 过渡完成的时间
+                    1.s秒 2.ms毫秒 1s = 1000ms
+                transition-timing-function 过渡的速度曲线
+                    1.linear 匀速
+                    2.ease 慢速开始，中间变快，慢速结束
+                    3.ease-in 慢速开始
+                    4.ease-out 慢速结束
+                    5.ease-in-out 慢速开始和结束
+                transition-delay 过渡延迟时间
+                    1.s秒 2.ms毫秒 1s = 1000ms
+                简写方式
+                    transition: [transition-property] [transition-duration] [transition-timing-function] [transition-delay]
+                注意：谁变化给谁加过渡属性
+        */
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            transition-property: all;
+            transition-duration: 2s;
+            transition-timing-function: ease;
+            transition-delay: 1s;
+        }
+
+        .box:hover {
+            width: 400px;
+            height: 400px;
+            background-color: gold;
+            border-radius: 50%;
+        }
+
+        .wrap {
+            width: 300px;
+            height: 300px;
+            background-color: blue;
+        }
+
+        .box1 {
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            transition: all 1s linear;
+        }
+
+        .wrap:hover .box1 {
+            width: 200px;
+            height: 200px;
+            background-color: orange;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+    <div class="wrap">
+        <div class="box1"></div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            height: 1px;
+            background-color: #000;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+    ie中图片边框问题
+    解决：border：none或0
+    -->
+
+    <!-- 
+    ie6以下定义小高度问题
+    解决：
+        oveflow:hidden;
+        font-size:0;
+        line-height:0;
+    -->
+    <!-- 
+    ie6之前版本产生双倍边距
+    解决：_display:inline;
+    -->
+    <!-- 
+    子标签定位，父标签overflow:hidden无效
+    解决：父标签加相对定位
+    -->
+
+    <!-- 
+    行转行内块ie7以下不在一行显示
+    解决：
+        *display：inline；
+        *zoom：1；
+    -->
+
+    <!-- 
+    清浮动
+        双冒号支持ie9+      .clearfix::after
+        单冒号支持ie8        .clearfix:after
+        ie7以下             .clearfic{ *zoom：1; }
+    -->
+    <div class="box"></div>
+</body>
+</html>

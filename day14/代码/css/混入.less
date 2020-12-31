@@ -1,0 +1,39 @@
+.public {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    border: 5px solid #000;
+    border-radius: 50%;
+}
+.box1 {
+    .public;
+    font-size: 30px;
+    color: #fff;
+}
+.box2 {
+    .public;
+    font-size: 40px;
+    color: blue;
+}
+// 混入加参数
+.border-radius(@a:10px,@w:100px,@h:100px,@bgc:red){
+    background-color: @bgc;
+    border-radius: @a;
+    width: @w;
+    height: @h;
+}
+
+.box3 {
+    .border-radius(20px,200px,200px,blue);
+}
+.box4 {
+    .border-radius;
+}
+
+.box-shadow(@x,@y,@blur,@size,@color){
+    // box-shadow: @x @y @blur @size @color;
+    box-shadow: @arguments; //所有的传入值
+}
+.box5 {
+    .box-shadow(10px,10px,10px,0,red)
+}

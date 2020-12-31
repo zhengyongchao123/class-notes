@@ -1,0 +1,28 @@
+@media (max-width: 992px) {
+    .order {
+        width: 48%;
+    }
+}
+@media (max-width:768px) {
+    .order {
+        width: 98%;
+    }
+    .logo {
+        display: none;
+    }
+    .menu {
+        display: none;
+    }
+    .user {
+        width: 100%;
+    }
+    .main {
+        width: 100%;
+    }
+    .cancellation {
+        display: none;
+    }
+    .menu_button{
+        display: block;
+    }
+}

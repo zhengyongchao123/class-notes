@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrap {
+            width: 300px;
+            height: 300px;
+            border: 1px solid #000;
+            display: grid;
+            grid-template-columns: repeat(3,100px);
+            grid-template-rows: repeat(3,100px);
+            /* 
+                水平对齐方式 justify-items
+                    start/center/end
+                垂直对齐方式 align-items
+                    start/center/end
+                简写 place-items: align-items justify-items
+                    start/center/end
+             */
+            /* justify-items: end;
+            align-items: end; */
+            place-items: center end;
+        }
+        .box {
+            width: 80px;
+            height: 80px;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>

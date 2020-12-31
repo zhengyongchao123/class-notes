@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrap{
+            display: grid;
+            grid-template-columns: repeat(3,100px);
+            grid-template-rows: repeat(3,100px);
+            /* 定义区域 */
+            grid-template-areas: 'a b c''d e f''g h i';
+        }
+        .box{
+            background-color: black;
+            /* 指定区域 */
+            grid-area: e;
+        }
+    </style>
+</head>
+<body>
+    <dic class="wrap">
+        <div class="box"></div>
+    </dic>
+</body>
+</html>

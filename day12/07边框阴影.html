@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+        box-shadow
+            1.水平位置  必须
+            2.垂直位置  必须
+            3.模糊距离
+            4.阴影的尺寸
+            5.阴影的颜色
+            6.阴影的内外部， 默认外部，可以设置内部inset */
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color:dodgerblue;
+            box-shadow: 0px 10px 20px 10px #333;
+            margin-top: 100px;
+            animation:  run 1.5s linear infinite;
+            float: left;
+            margin-left: 30px;
+        }
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color:dodgerblue;
+            box-shadow: 0px 10px 20px 10px #333;
+            margin-top: 100px;
+            animation:  run 1.5s linear infinite 0.3s;
+            float: left;
+            margin-left: 30px;
+        }
+        @keyframes run{
+            50%{
+                margin-top: 50px;
+                box-shadow: 0px 60px 5px 0px #333;
+            }
+            100%{
+                box-shadow: 0px 10px 20px 10px #333;
+            margin-top: 100px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <div class="box1"></div>
+</body>
+</html>

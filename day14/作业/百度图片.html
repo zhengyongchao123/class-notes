@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header{
+            width: 1349px;
+            height: 550px;
+            background-image: url(./素材/bg1.jpg);
+            background-size: 1349px 550px;
+            display: flex;
+            flex-direction: column;
+            /* justify-content: center; */
+            align-items: center;
+        }
+        header img{
+            width: 220px;
+            height: 80px;
+            margin-top: 148px;
+        }
+        .search{
+            width: 595px;
+            height: 50px;
+            border: 1px solid #fff;
+            display: flex;
+            align-items: center;
+            margin-top: 40px;
+            color: #ccc;
+            /* line-height: 50px; */
+        }
+        .text{
+            width: 447px;
+            height: 48px;
+            background-color: transparent;
+            border: 0;
+            color: #fff;
+            outline: none;
+        }
+        .button1{
+            width: 65px;
+            height: 50px;
+            background-image: url(./images/照相.png);
+            background-repeat: no-repeat;
+            background-size: 35px 28px;
+            background-position: 15px 11px;
+            background-color: transparent;
+            border: 0;
+            outline: none;
+        }
+        .button2{
+            width: 65px;
+            height: 50px;
+            background-image: url(./images/搜索.png);
+            background-repeat: no-repeat;
+            background-size: 35px 28px;
+            background-position: 15px 11px;
+            background-color: transparent;
+            border: 0;
+            outline: none;
+        }
+        ul{
+            width: 456px;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            list-style-type: none;
+            color: #f1f1f1;
+            font-size: 14px;
+        }
+        p{
+            width: 1265px;
+            color: #fff;
+            margin-top: 130px;
+            font-size: 14px;
+        }
+        main{
+            width: 1265px;
+            display: flex;
+            margin: 0 auto;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .head{
+            width: 1265px;
+            height: 45px;
+            margin: 10px 0;
+            display: flex;
+            /* background-color: turquoise; */
+            justify-content: space-between;
+            /* flex-direction: row; */
+        }
+        span{
+            width: 100px;
+            height: 45px;
+            line-height: 45px;
+            color: #333;
+            display: flex;
+            justify-content: space-around;
+        }
+        .span1{
+            width: 35px;
+            height: 45px;
+            line-height: 45px;
+            display: block;
+            text-align: center;
+            border-bottom: 1px solid #ccc;
+            cursor: pointer;
+        }
+        .span1:hover{
+            border-bottom: 1px solid #333;
+        }
+        main img{
+            height: 328px;
+            margin-bottom: 15px;
+        }
+        main .img1{
+            height: 200px;
+        }
+        main .img2{
+            height: 197px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="./images/百度.png" alt="">
+        <div class="search">
+            <input type="text" class="text">
+            <input type="button" class="button1" >|
+            <input type="submit" class="button2" value=" ">
+        </div>
+        <ul>
+            <li>热门搜索</li>
+            <li>壁纸</li>
+            <li>图腾</li>
+            <li>头像</li>
+            <li>高清动漫</li>
+        </ul>
+        <p>背景图片来源：荷莲</p>
+    </header>
+    <main>
+        <div class="head">
+            <span>精美图片</span>
+            <span>
+            <span class="span1">最热</span>
+            <span class="span1">最新</span>
+        </span>
+        </div>
+        <img src="./素材/img01.webp" alt="">
+        <img src="./素材/img02.webp" alt="">
+        <img src="./素材/img03.webp" alt="">
+        <img src="./素材/img04.webp" alt="">
+        <img class="img1" src="./素材/img05.webp" alt="">
+        <img class="img1" src="./素材/img06.webp" alt="">
+        <img class="img1" src="./素材/img07.webp" alt="">
+        <img class="img1" src="./素材/img08.webp" alt="">
+        <img class="img2" src="./素材/img09.webp" alt="">
+        <img class="img2" src="./素材/img10.webp" alt="">
+        <img class="img2" src="./素材/img11.webp" alt="">
+        <img class="img2" src="./素材/img12.webp" alt="">
+    </main>
+</body>
+</html>

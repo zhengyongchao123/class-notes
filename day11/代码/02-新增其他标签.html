@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        figure {
+            text-align: center;
+        }
+        img {
+            width: 200px;
+        }
+        mark {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <figure>
+        <figcaption>标题</figcaption>
+        <img src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=1672824262,2727256094&fm=11&gp=0.jpg" alt="">
+    </figure>
+    <p>今天天气真<mark>好</mark></p>
+    <time datetime="2020-12-25">圣诞节</time>
+    <!-- 
+        max 最大值
+        value 当前值
+     -->
+    <progress max="100" value="50"></progress>
+    <hr>
+    <!-- 
+        max 最大值
+        min 最小值
+        high 限定高的值
+        low 限定低的值
+        optimun 定义度量值最佳的值，如果比high高意味着越高越好，如果比low低意味着越低越好
+        value 当前值
+     -->
+    <meter max="100" min="0" high="90" low="20" optimum="18" value="92"></meter>
+</body>
+</html>
